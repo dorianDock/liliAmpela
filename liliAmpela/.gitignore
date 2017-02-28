@@ -23,3 +23,7 @@
 # Ignore Rubymine settings
 /.idea/
 /.idea/*
+
+# public
+/public/spree/products/
+/public/spree/products
