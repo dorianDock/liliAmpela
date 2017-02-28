@@ -141,7 +141,6 @@
     <orderEntry type="library" scope="PROVIDED" name="bootstrap-sass (v3.3.7, RVM: ruby-2.3.1 [liliAmpela5010]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.3, RVM: ruby-2.3.1 [liliAmpela5010]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.14.4, RVM: ruby-2.3.1 [liliAmpela5010]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="byebug (v9.0.6, RVM: ruby-2.3.1 [liliAmpela5010]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="camertron-eprun (v1.1.1, RVM: ruby-2.3.1 [liliAmpela5010]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="cancancan (v1.10.1, RVM: ruby-2.3.1 [liliAmpela5010]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="canonical-rails (v0.1.2, RVM: ruby-2.3.1 [liliAmpela5010]) [gem]" level="application" />
@@ -173,6 +172,7 @@
     <orderEntry type="library" scope="PROVIDED" name="highline (v1.6.21, RVM: ruby-2.3.1 [liliAmpela5010]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="htmlentities (v4.3.4, RVM: ruby-2.3.1 [liliAmpela5010]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v0.7.0, RVM: ruby-2.3.1 [liliAmpela5010]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="i18n (v0.8.0, RVM: ruby-2.3.1 [liliAmpela5010]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n_data (v0.7.0, RVM: ruby-2.3.1 [liliAmpela5010]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.6.2, RVM: ruby-2.3.1 [liliAmpela5010]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v4.2.2, RVM: ruby-2.3.1 [liliAmpela5010]) [gem]" level="application" />
@@ -193,6 +193,7 @@
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.12.1, RVM: ruby-2.3.1 [liliAmpela5010]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nio4r (v1.2.1, RVM: ruby-2.3.1 [liliAmpela5010]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.6.8.1, RVM: ruby-2.3.1 [liliAmpela5010]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.7.0.1, RVM: ruby-2.3.1 [liliAmpela5010]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="orm_adapter (v0.5.0, RVM: ruby-2.3.1 [liliAmpela5010]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="paperclip (v4.3.7, RVM: ruby-2.3.1 [liliAmpela5010]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="paranoia (v2.2.1, RVM: ruby-2.3.1 [liliAmpela5010]) [gem]" level="application" />

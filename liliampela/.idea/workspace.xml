@@ -88,7 +88,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../liliAmpela" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -269,12 +269,12 @@
       <workItem from="1487693515078" duration="569000" />
       <workItem from="1487799822988" duration="780000" />
       <workItem from="1487884349627" duration="2093000" />
-      <workItem from="1488304687144" duration="2285000" />
+      <workItem from="1488304687144" duration="2418000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5980000" />
+    <option name="totallyTimeSpent" value="6113000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="1104" width="1920" height="1003" extended-state="6" />
