@@ -1,5 +1,14 @@
 <header id="header" class="row" data-hook>
-  <figure id="logo" class="columns six" data-hook><%= logo %></figure>
+
+  <div class="ui grid">
+    <div class="one wide column">
+
+    </div>
+    <div class="six wide column"></div>
+    <div class="five wide column"></div>
+  </div>
+  <figure id="logo" class="columns six" data-hook><%= image_tag '', :class => 'ui icon' %></figure>
   <%= render :partial => 'spree/shared/nav_bar' %>
+  <i class="ui icon check"></i>
   <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
 </header>
