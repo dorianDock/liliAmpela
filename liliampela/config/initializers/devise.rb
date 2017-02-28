@@ -1,1 +1,0 @@
-Devise.secret_key = "980cb56031a65a7e8d144f0d70e8170a3933d6e6dad1a687ace2c8fd8db0518fe6bff2ccb819cf18439d5d8731d493bfdc4f"
