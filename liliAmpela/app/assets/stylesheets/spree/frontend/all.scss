@@ -6,7 +6,9 @@ $milk_white: #ecefc3;
 $white_green: #effff3;
 
 body {
-  background-color: $white_green !important;
+  //background-color: $white_green !important;
+  background-image: url('/assets/background2.png') !important;
+  background-size: cover !important;
 }
 
 .carrouselImage{
