@@ -21,7 +21,12 @@
 
         <div id="content" class="columns mainContainer <%= !content_for?(:sidebar) ? "sixteen" : "twelve omega" %>" data-hook>
           <%= flash_messages %>
-          <%= yield %>
+          <div class="ui grid">
+            <div class="six wide column"></div>
+            <div class="ten wide column">
+              <%= yield %>
+            </div>
+          </div>
         </div>
 
         <%= yield :templates %>

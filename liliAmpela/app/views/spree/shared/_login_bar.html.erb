@@ -1,0 +1,10 @@
+<div class="ui divided items">
+
+<% if spree_current_user %>
+  <%= link_to Spree.t(:my_account), spree.account_path, class: 'ui item' %>
+  <%= link_to Spree.t(:logout), spree.logout_path, class: 'ui item'%>
+<% else %>
+  <div id="link-to-login"><%= link_to Spree.t(:login), spree.login_path, class: 'ui item' %></div>
+<% end %>
+
+</div>

@@ -1,22 +1,18 @@
 <header id="header" class="row" data-hook>
   <div class="ui grid">
     <div class="five wide column">
-
     </div>
     <div class="six wide column">
-
     </div>
     <div class="five wide column">
-
     </div>
   </div>
 
   <div class="ui center aligned container">
     <div class="ui stackable grid">
       <div class="four wide column">
-        <%= image_tag 'big_logo.jpg', :class => 'ui centered medium image' %>
+        <%= image_tag 'logo_nature.jpg', :class => 'ui centered small image' %>
       </div>
-
       <div class="eight wide column middle aligned">
         <div class="ui massive secondary menu">
           <a class="item">Home</a>
@@ -24,24 +20,16 @@
           <a class="item">Catalogue</a>
           <a class="item">Contact</a>
         </div>
-
-
       </div>
-
       <div class="two wide column middle aligned">
         <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
+
       </div>
       <div class="two wide column middle aligned">
-
+        <%= render :partial => 'spree/shared/login_bar' %>
       </div>
     </div>
-
-
-
   </div>
-
-
-
   <!--<figure id="logo" class="columns six" data-hook><%= image_tag '', :class => 'ui icon' %></figure>-->
   <!--<%= render :partial => 'spree/shared/nav_bar' %>-->
 
