@@ -1,3 +1,5 @@
+@import "slick";
+@import "slick-theme";
 @import "semantic-ui";
 
 $milk_white: #ecefc3;
@@ -5,4 +7,9 @@ $white_green: #effff3;
 
 body {
   background-color: $white_green !important;
+}
+
+.carrouselImage{
+  margin-right: 15px;
+  //border: solid 1px grey;
 }

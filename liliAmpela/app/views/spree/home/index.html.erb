@@ -1,14 +1,46 @@
-<% content_for :sidebar do %>
-  <div data-hook="homepage_sidebar_navigation">
-    <%= render :partial => 'spree/shared/taxonomies' %>
-    sdfdsfsdfd
-  </div>
-<% end %>
 
-<div data-hook="homepage_products">
-  <% cache(cache_key_for_products) do %>
-    <%= render :partial => 'spree/shared/products', :locals => { :products => @products } %>
-  <% end %>
-  erzrzrzer
+
+<div class="ui grid">
+  <div class="sixteen wide column">
+    <div class="liliSlider">
+      <div class="firstPicture carrouselImage">
+        <%= image_tag 'carrousel1.jpg', :class => 'ui image' %>
+      </div>
+      <div class="secondPicture carrouselImage">
+        <%= image_tag 'carrousel2.jpg', :class => 'ui image' %>
+      </div>
+      <div class="thirdPicture carrouselImage">
+        <%= image_tag 'carrousel3.jpg', :class => 'ui image' %>
+      </div>
+      <div class="fourthPicture carrouselImage">
+        <%= image_tag 'carrousel4.jpg', :class => 'ui image' %>
+      </div>
+      <div class="fifthPicture carrouselImage">
+        <%= image_tag 'carrousel5.jpg', :class => 'ui image' %>
+      </div>
+      <div class="sixthPicture carrouselImage">
+        <%= image_tag 'carrousel6.jpg', :class => 'ui image' %>
+      </div>
+    </div>
+  </div>
 </div>
+
+
+<% #content_for :sidebar do %>
+    <!--<div data-hook="homepage_sidebar_navigation">-->
+      <!--<%= render :partial => 'spree/shared/taxonomies' %>-->
+      <!--sdfdsfsdfd-->
+    <!--</div>-->
+<% #end %>
+
+<!--<div data-hook="homepage_products">-->
+  <!--<% cache(cache_key_for_products) do %>-->
+      <!--<%= render :partial => 'spree/shared/products', :locals => { :products => @products } %>-->
+  <!--<% end %>-->
+  <!--erzrzrzer-->
+<!--</div>-->
+
+
+
+
 
