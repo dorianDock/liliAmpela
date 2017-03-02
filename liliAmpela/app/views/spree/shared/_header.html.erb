@@ -20,15 +20,15 @@
       <div class="ten wide column middle aligned">
         <div class="ui massive secondary menu">
           <a class="item">Home</a>
-          <a class="item">About</a>
-          <a class="item">Team</a>
-          <a class="item">Collection</a>
+          <a class="item">Story</a>
+          <a class="item">Catalogue</a>
+          <a class="item">Contact</a>
         </div>
         <h1 class="ui left aligned header">Lili Ampela</h1>
       </div>
 
       <div class="two wide column middle aligned">
-
+        <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
       </div>
     </div>
 
@@ -39,6 +39,6 @@
 
 
   <!--<figure id="logo" class="columns six" data-hook><%= image_tag '', :class => 'ui icon' %></figure>-->
-  <%= render :partial => 'spree/shared/nav_bar' %>
-  <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
+  <!--<%= render :partial => 'spree/shared/nav_bar' %>-->
+
 </header>
