@@ -4,11 +4,19 @@
   <h1><%= Spree.t(:editing_user) %></h1>
 
   <div data-hook="account_edit">
-    <%= form_for Spree::User.new, as: @user, url: spree.user_path(@user), method: :put do |f| %>
-      <%= render partial: 'spree/shared/user_form', locals: { f: f } %>
-      <p>
-        <%= f.submit Spree.t(:update), class: 'button primary' %>
-      </p>
-    <% end %>
+    <div class="ui middle aligned center aligned grid">
+
+    <div class="ten wide column">
+      <%= form_for Spree::User.new, as: @user, url: spree.user_path(@user), html: { class: "ui large form" }, method: :put do |f| %>
+          <%= render partial: 'spree/shared/user_form', locals: { f: f } %>
+          <p>
+            <%= f.submit Spree.t(:update), class: 'ui fluid large teal submit button' %>
+          </p>
+      <% end %>
+    </div>
+    <div class="six wide column"></div>
+    </div>
   </div>
 </div>
+
+

@@ -23,10 +23,12 @@
           <%= flash_messages %>
           <div class="ui grid">
             <div class="six wide column"></div>
-            <div class="ten wide column">
+            <div class="six wide column">
               <%= yield %>
             </div>
+            <div class="four wide column"></div>
           </div>
+
         </div>
 
         <%= yield :templates %>

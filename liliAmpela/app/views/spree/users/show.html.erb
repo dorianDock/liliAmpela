@@ -1,12 +1,15 @@
 <h1><%= accurate_title %></h1>
 
 <div data-hook="account_summary" class="account-summary">
-  <dl id="user-info">
-    <dt><%= Spree.t(:email) %></dt>
-    <dd><%= @user.email %> (<%= link_to Spree.t(:edit), spree.edit_account_path %>)</dd>
-  </dl>
-</div>
+  <a class="ui huge label">
+    <i class="mail icon"></i> <%= @user.email %>
+  </a>
+  <i class="ui icon edit"></i>
+  (<%= link_to Spree.t(:edit), spree.edit_account_path %>)
 
+</div>
+<br>
+<br>
 <div data-hook="account_my_orders" class="account-my-orders">
 
   <h3><%= Spree.t(:my_orders) %></h3>

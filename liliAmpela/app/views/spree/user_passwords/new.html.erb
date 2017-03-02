@@ -5,13 +5,17 @@
 
   <p><%= Spree.t(:instructions_to_reset_password) %></p>
 
-  <%= form_for Spree::User.new, as: :spree_user, url: spree.reset_password_path do |f| %>
-    <p>
-      <%= f.label :email, Spree.t(:email) %><br />
-      <%= f.email_field :email %>
-    </p>
-    <p>
-      <%= f.submit Spree.t(:reset_password), class: 'button primary' %>
-    </p>
+  <%= form_for Spree::User.new, as: :spree_user, url: spree.reset_password_path, html: { class: "ui form" } do |f| %>
+      <div class="field">
+        <%= f.label :email, Spree.t(:email) %>
+        <div class="ui left icon input">
+          <i class="user icon"></i>
+          <%= f.email_field :email, autofocus: true %>
+        </div>
+      </div>
+
+
+      <%= f.submit Spree.t(:reset_password), :class => 'ui fluid large teal submit button' %>
+
   <% end %>
 </div>

@@ -1,17 +1,24 @@
-<p>
-  <%= f.label :email, Spree.t(:email) %><br />
-  <%= f.email_field :email, class: 'title' %>
-</p>
-<div id="password-credentials">
-  <p>
-    <%= f.label :password, Spree.t(:password) %><br />
-    <%= f.password_field :password, class: 'title' %>
-  </p>
 
-  <p>
-    <%= f.label :password_confirmation, Spree.t(:confirm_password) %><br />
-    <%= f.password_field :password_confirmation, class: 'title' %>
-  </p>
-</div>
+  <div class="field">
+    <%= f.label :email, Spree.t(:email) %>
+    <div class="ui left icon input">
+      <i class="user icon"></i>
+      <%= f.email_field :email, autofocus: true %>
+    </div>
+  </div>
+<div id="password-credentials" class="field">
+  <%= f.label :password, Spree.t(:password) %>
+  <div class="ui left icon input">
+    <%= f.password_field :password %>
+  </div>
+  </div>
+  <div class="field">
+    <%= f.label :password_confirmation, Spree.t(:confirm_password) %>
+    <div class="ui left icon input">
+      <%= f.password_field :password_confirmation, class: 'title' %>
+    </div>
+  </div>
+
+
 
 <div data-hook="signup_below_password_fields"></div>
