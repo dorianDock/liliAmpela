@@ -18,13 +18,14 @@ body {
 
 .mainContainer{
   margin-top: 5% !important;
-  margin-bottom: 3% !important;
+
   min-height: 500px;
   background-color: $milk_white;
 }
 
 #footer {
-  //background-color: $milk_white;
+  background-color: $milk_white;
+  padding-top: 8%;
 }
 
 .pagination{
