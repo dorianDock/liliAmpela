@@ -26,3 +26,19 @@ body {
 #footer {
   //background-color: $milk_white;
 }
+
+.pagination{
+  margin-top: 25px !important;
+}
+.pagination > .first{
+  padding: 10px !important;
+}
+.pagination > .prev{
+  padding: 10px !important;
+}
+.pagination > .next{
+  padding: 10px !important;
+}
+.pagination > .page{
+  padding: 10px !important;
+}
