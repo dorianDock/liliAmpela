@@ -31,7 +31,7 @@
             <% cache(@taxon.present? ? [I18n.locale, current_pricing_options, @taxon, product] : [I18n.locale, current_pricing_options, product]) do %>
                 <a class="image product-image" href="<%= url %>>">
                   <%= image_tag(product.display_image.attachment(:small), itemprop: "image") %>
-                 
+
                 </a>
                 <div class="content">
                   <%= link_to truncate(product.name, length: 50), url, class: 'header', itemprop: "name", title: product.name %>
