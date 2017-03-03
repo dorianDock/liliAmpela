@@ -40,4 +40,29 @@ module ApplicationHelper
     content_tag(:div, raw(items.map(&:mb_chars).join), id: 'breadcrumbs', class: 'ui breadcrumb')
   end
 
+  def custom_flash_messages(opts = {})
+    ignore_types = ["order_completed"].concat(Array(opts[:ignore_types]).map(&:to_s) || [])
+
+    flash.each do |msg_type, text|
+      unless ignore_types.include?(msg_type)
+        concat(content_tag(:div, text, class: "flash #{msg_type}"))
+      end
+    end
+    nil
+  end
+
+  def custom_taxons_tree(root_taxon, current_taxon, max_level = 1)
+    return '' if max_level < 1 || root_taxon.children.empty?
+    content_tag :ul, class: 'ui list taxons-list' do
+      taxons = root_taxon.children.map do |taxon|
+        css_class = (current_taxon && current_taxon.self_and_ancestors.include?(taxon)) ? 'current' : nil
+        content_tag :li, class: 'item '+css_class.to_s do
+          link_to(taxon.name, seo_url(taxon)) +
+              taxons_tree(taxon, current_taxon, max_level - 1)
+        end
+      end
+      safe_join(taxons, "\n")
+    end
+  end
+
 end
