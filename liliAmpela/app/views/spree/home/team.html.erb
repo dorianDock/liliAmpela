@@ -1,58 +1,7 @@
 <h3>Equipe de production</h3>
-<div class="ui five column grid">
-  <div class="column">
-    <div class="ui fluid card">
-      <div class="image">
-        <%= image_tag 'team11.jpg', :class => '' %>
-      </div>
-      <div class="content">
-        <a class="header">Daniel Louise</a>
-      </div>
-    </div>
-  </div>
-  <div class="column">
-    <div class="ui fluid card">
-      <div class="image">
-        <%= image_tag 'team9.jpg' %>
-      </div>
-      <div class="content">
-        <a class="header">Helen Troy</a>
-      </div>
-    </div>
-  </div>
-  <div class="column">
-    <div class="ui fluid card">
-      <div class="image">
-        <%= image_tag 'team3.jpg' %>
-      </div>
-      <div class="content">
-        <a class="header">Elliot Fu</a>
-      </div>
-    </div>
-  </div>
-  <div class="column">
-    <div class="ui fluid card">
-      <div class="image">
-        <%= image_tag 'team4.jpg' %>
-      </div>
-      <div class="content">
-        <a class="header">Elliot Fu</a>
-      </div>
-    </div>
-  </div>
-  <div class="column">
-    <div class="ui fluid card">
-      <div class="image">
-        <%= image_tag 'team5.jpg' %>
-      </div>
-      <div class="content">
-        <a class="header">Elliot Fu</a>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="ui five cards">
+
+<div class="ui three special cards">
   <div class="card">
     <div class="image">
       <%= image_tag 'team11.jpg' %>
@@ -61,6 +10,7 @@
       Richard
     </div>
   </div>
+
   <div class="card">
     <div class="image">
       <%= image_tag 'team8.jpg' %>
@@ -70,7 +20,7 @@
     </div>
   </div>
   <div class="card">
-    <div class="image ui small">
+    <div class="image">
       <%= image_tag 'team3.jpg' %>
     </div>
     <div class="extra">
@@ -102,9 +52,28 @@
     </div>
   </div>
   <div class="card">
-    <div class="image">
-      <%= image_tag 'team2.jpg' %>
+    <div class="blurring dimmable image">
+      <div class="ui dimmer">
+        <div class="content">
+          <div class="center">
+            <div class="ui inverted button">Add Friend</div>
+          </div>
+        </div>
+      </div>
+      <%= image_tag 'team2.jpg', class:'content'%>
     </div>
+
+    <div class="extra">
+      Sandra
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="ui slide masked reveal image">
+      <%= image_tag 'team2.jpg', class:'visible content'%>
+      <div class="hidden content">Cette meuf est gentille</div>
+    </div>
+
     <div class="extra">
       Sandra
     </div>
@@ -127,7 +96,7 @@
     </div>
   </div>
 
-  <div class="card">
+  <div class="card centered">
     <div class="image">
       <%= image_tag 'team10.jpg' %>
     </div>

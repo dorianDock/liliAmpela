@@ -8,6 +8,7 @@
 //= require jquery_ujs
 //= require spree/frontend
 //= require slick.min
+//= require semantic-ui
 //= require_tree .
 //= require spree/frontend/solidus_i18n
 
@@ -25,4 +26,10 @@ function triggerSlideShow(){
     });
 }
 
-Spree.ready(triggerSlideShow);
+Spree.ready(function(){
+    triggerSlideShow();
+    $('.special.cards .image').dimmer({
+        on: 'hover'
+    });
+
+});
