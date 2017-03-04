@@ -1,4 +1,4 @@
-<%= form_for :order, :url => populate_orders_path do |f| %>
+<%= form_for :order, :url => populate_orders_path,  html: { class: "ui form" } do |f| %>
   <div id="inside-product-cart-form" data-hook="inside_product_cart_form" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
 
     <% if @product.variants_and_option_values_for(current_pricing_options).any? %>
@@ -32,7 +32,7 @@
       <div data-hook="product_price" class="columns five <%= !@product.has_variants? ? 'alpha' : 'omega' %>">
 
         <div id="product-price">
-          <h6 class="product-section-title"><%= Spree.t(:price) %></h6>
+          <h4 class="header product-section-title"><%= Spree.t(:price) %></h4>
           <div>
             <span class="price selling" itemprop="price">
               <%= display_price(@product) %>
@@ -49,10 +49,16 @@
         </div>
 
         <div class="add-to-cart">
-          <%= number_field_tag :quantity, 1, :class => 'title', :min => 1 %>
-          <%= button_tag :class => 'large primary', :id => 'add-to-cart-button', :type => :submit do %>
-            <%= Spree.t(:add_to_cart) %>
-          <% end %>
+          <div class="ui action input">
+            <%= number_field_tag :quantity, 1, :class => 'title field', :min => 1 %>
+            <%= button_tag :class => 'ui big icon green medium button', :id => 'add-to-cart-button', :type => :submit do %>
+                <i class="ui icon add to cart"></i>
+                <% #Spree.t(:add_to_cart) %>
+            <% end %>
+
+          </div>
+
+
         </div>
       </div>
     <% else %>

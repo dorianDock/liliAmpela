@@ -3,7 +3,9 @@
 @import "semantic-ui";
 
 $milk_white: whitesmoke;
+$transparent_milk_white: rgba(245,245,245,0.8);
 $white_green: #effff3;
+$light_grey: #BBADAD;
 
 body {
   //background-color: $white_green !important;
@@ -18,14 +20,14 @@ body {
 
 .mainContainer{
   margin-top: 5% !important;
-
+  padding-bottom: 1% !important;
   min-height: 500px;
   background-color: $milk_white;
 }
 
 #footer {
-  background-color: $milk_white;
-  padding-top: 8%;
+  background-color: $transparent_milk_white;
+  padding-top: 5%;
 }
 
 .pagination{
@@ -42,4 +44,16 @@ body {
 }
 .pagination > .page{
   padding: 10px !important;
+}
+
+#main-image{
+  height: 450px;
+}
+
+.selected{
+  background-color: grey;
+}
+
+.normalBorder{
+  border: 1px solid $light_grey;
 }

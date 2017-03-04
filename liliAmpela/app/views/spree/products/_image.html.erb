@@ -1,5 +1,5 @@
 <% if defined?(image) && image %>
-  <%= image_tag image.attachment.url(:product), itemprop: "image" %>
+  <%= image_tag image.attachment.url(:product), itemprop: "image", class: 'ui medium image normalBorder' %>
 <% else %>
-  <%= image_tag @product.display_image.attachment(:product), itemprop: "image" %>
+  <%= image_tag @product.display_image.attachment(:product), itemprop: "image", class: 'ui medium image normalBorder' %>
 <% end %>

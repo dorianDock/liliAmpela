@@ -1,19 +1,27 @@
 <%# no need for thumbnails unless there is more than one image %>
 <% if (@product.images + @product.variant_images).uniq.size > 1 %>
-  <ul id="product-thumbnails" class="thumbnails inline" data-hook>
+  <div id="product-thumbnails" class="thumbnails ui tiny images" data-hook>
     <% @product.images.each do |i| %>
-      <li class='tmb-all tmb-<%= i.viewable.id %>'>
-        <%= link_to(image_tag(i.attachment.url(:mini)), i.attachment.url(:product)) %>
-      </li>
+      <div class='ui image tmb-all tmb-<%= i.viewable.id %>'>
+        <%= link_to(image_tag(i.attachment.url(:mini), class: 'realThumbPicture normalBorder'), i.attachment.url(:product)) %>
+      </div>
     <% end %>
 
     <% if @product.has_variants? %>
       <% @product.variant_images.each do |i| %>
         <% next if @product.images.include?(i) %>
-        <li class='vtmb tmb-<%= i.viewable.id %>'>
+        <div class='vtmb tmb-<%= i.viewable.id %>'>
           <%= link_to(image_tag(i.attachment.url(:mini)), i.attachment.url(:product)) %>
-        </li>
+        </div>
       <% end %>
     <% end %>
-  </ul>
+  </div>
 <% end %>
+
+<!--<div id="product-thumbnails" class="thumbnails ui tiny images divided" data-hook>-->
+  <!--<% @product.images.each do |i| %>-->
+
+        <!--<%= image_tag(i.attachment.url(:mini), :class => 'ui small image') %>-->
+
+  <!--<% end %>-->
+<!--</div>-->
