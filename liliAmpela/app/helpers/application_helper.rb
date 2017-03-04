@@ -15,9 +15,23 @@ module ApplicationHelper
     link_to text.html_safe, spree.cart_path, class: "cart-info item"
   end
 
+  def custom_product_breadcrumbs(separator = '&nbsp;&raquo;&nbsp;', breadcrumb_class = 'inline')
+    return '' if current_page?('/products')
+
+    crumbs = [[Spree.t(:home), spree.root_path]]
+    crumbs << [Spree.t(:products), products_path]
+
+    items = crumbs.each_with_index.collect do |crumb, i|
+      link_to(crumb.last, itemprop: 'item') do
+        content_tag(:span, crumb.first, itemprop: 'name') + tag('meta', { itemprop: 'position', content: (i+1).to_s }, false, false)
+      end + (crumb == crumbs.last ? '' : content_tag(:i,'', class: 'right angle icon divider'))
+    end
+
+    content_tag(:div, raw(items.map(&:mb_chars).join), id: 'breadcrumbs', class: 'ui breadcrumb')
+  end
 
   def custom_taxon_breadcrumbs(taxon, separator = '&nbsp;&raquo;&nbsp;', breadcrumb_class = 'inline')
-    return '' if current_page?('/') || taxon.nil?
+    return '' if current_page?('/')
 
     crumbs = [[Spree.t(:home), spree.root_path]]
 

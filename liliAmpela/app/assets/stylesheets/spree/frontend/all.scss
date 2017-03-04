@@ -6,6 +6,7 @@ $milk_white: whitesmoke;
 $transparent_milk_white: rgba(245,245,245,0.8);
 $white_green: #effff3;
 $light_grey: #BBADAD;
+$light_brown: #403632;
 
 body {
   //background-color: $white_green !important;
@@ -56,4 +57,19 @@ body {
 
 .normalBorder{
   border: 1px solid $light_grey;
+}
+
+.normal_price{
+  font-size: 1.3em;
+  color: $light_brown;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#product-properties{
+  margin-top: 60px;
+}
+
+.listOfAdvantages{
+  padding-top: 25px;
 }
