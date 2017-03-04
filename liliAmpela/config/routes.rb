@@ -7,4 +7,12 @@ Rails.application.routes.draw do
   # We ask that you don't use the :as option here, as Spree relies on it being the default of "spree"
   mount Spree::Core::Engine, :at => '/'
           # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  Spree::Core::Engine.routes.draw do
+    get 'home/team'
+    get 'home/story'
+    get 'home/contact'
+  end
+
+
 end

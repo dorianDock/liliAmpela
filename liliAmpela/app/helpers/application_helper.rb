@@ -31,7 +31,7 @@ module ApplicationHelper
   end
 
   def custom_taxon_breadcrumbs(taxon, separator = '&nbsp;&raquo;&nbsp;', breadcrumb_class = 'inline')
-    return '' if current_page?('/')
+    return '' if current_page?('/') || current_page?('/home/story') || current_page?('/home/contact')
 
     crumbs = [[Spree.t(:home), spree.root_path]]
 
@@ -77,6 +77,29 @@ module ApplicationHelper
       end
       safe_join(taxons, "\n")
     end
+  end
+
+  def meta_data
+    object = instance_variable_get('@' + controller_name.singularize)
+    meta = {}
+
+    if object.is_a? ActiveRecord::Base
+      meta[:keywords] = object.meta_keywords if object[:meta_keywords].present?
+      meta[:description] = object.meta_description if object[:meta_description].present?
+    end
+
+    if meta[:description].blank? && object.is_a?(Spree::Product)
+      meta[:description] = truncate(strip_tags(object.description), length: 160, separator: ' ')
+    end
+
+
+    meta
+  end
+
+  def meta_data_tags
+    meta_data.map do |name, content|
+      tag('meta', name: name, content: content)
+    end.join("\n")
   end
 
 end

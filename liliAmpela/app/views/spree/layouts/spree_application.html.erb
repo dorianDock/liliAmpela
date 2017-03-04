@@ -8,15 +8,9 @@
     <%= render :partial => 'spree/shared/head' %>
   </head>
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
-
     <div class="container">
-
       <%= render :partial => 'spree/shared/header' %>
-
       <div id="wrapper" class="row" data-hook>
-
-
-
         <div id="content" class="columns mainContainer <%= !content_for?(:sidebar) ? "sixteen" : "twelve omega" %>" data-hook>
           <div class="ui grid">
             <div class="five wide column"></div>
@@ -31,25 +25,21 @@
                     <p class="header notice"><%= notice %></p>
                   </div>
               <%- end %>
-
               <%- if flash[:alert] %>
                   <div class="ui attached negative message notice">
                     <p class="header alert"><%= alert %></p>
                   </div>
               <%- end %>
-
               <%- if flash[:error] %>
                   <div class="ui attached negative message notice">
                     <p class="header alert"><%= flash[:error] %></p>
                   </div>
               <%- end %>
-
               <%- if flash[:info] %>
                   <div class="ui attached message notice">
                     <p class="header notice"><%= flash[:info] %></p>
                   </div>
               <%- end %>
-
             </div>
             <div class="four wide column"></div>
           </div>
@@ -62,21 +52,14 @@
               <%= render :partial => 'spree/shared/sidebar' if content_for? :sidebar %>
             </div>
             <div class="six wide column">
-
               <%= yield %>
             </div>
             <div class="four wide column"></div>
           </div>
-
         </div>
-
         <%= yield :templates %>
-
       </div>
-
       <%= render :partial => 'spree/shared/footer' %>
-
     </div>
-
   </body>
 </html>
