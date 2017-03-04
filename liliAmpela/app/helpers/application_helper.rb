@@ -31,7 +31,7 @@ module ApplicationHelper
   end
 
   def custom_taxon_breadcrumbs(taxon, separator = '&nbsp;&raquo;&nbsp;', breadcrumb_class = 'inline')
-    return '' if current_page?('/') || current_page?('/home/story') || current_page?('/home/contact')
+    return '' if current_page?('/') || current_page?('/home/story') || current_page?('/home/contact') || current_page?('/home/team')
 
     crumbs = [[Spree.t(:home), spree.root_path]]
 
