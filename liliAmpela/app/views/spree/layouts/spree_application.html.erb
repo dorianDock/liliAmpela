@@ -10,6 +10,7 @@
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
     <div class="container">
       <%= render :partial => 'spree/shared/header' %>
+      <% is_welcome = ['home'].include?(controller_name) && ['index'].include?(action_name) %>
       <div id="wrapper" class="row" data-hook>
         <div id="content" class="columns mainContainer <%= !content_for?(:sidebar) ? "sixteen" : "twelve omega" %>" data-hook>
           <div class="ui grid">
@@ -45,16 +46,23 @@
           </div>
           <%= flash_messages %>
           <div class="ui grid">
-            <div class="two wide column"></div>
-            <div class="three wide column">
-              <%= custom_taxon_breadcrumbs(@taxon) %>
-              <%- #custom_product_breadcrumbs %>
-              <%= render :partial => 'spree/shared/sidebar' if content_for? :sidebar %>
-            </div>
-            <div class="six wide column">
-              <%= yield %>
-            </div>
-            <div class="four wide column"></div>
+            <%- unless is_welcome %>
+              <div class="two wide column"></div>
+              <div class="three wide column">
+                <%= custom_taxon_breadcrumbs(@taxon) %>
+                <%- #custom_product_breadcrumbs %>
+                <%= render :partial => 'spree/shared/sidebar' if content_for? :sidebar %>
+              </div>
+              <div class="six wide column">
+                <%= yield %>
+              </div>
+              <div class="four wide column"></div>
+            <%- end %>
+            <%- if is_welcome %>
+                <div class="sixteen wide column">
+                  <%= yield %>
+                </div>
+            <%- end %>
           </div>
         </div>
         <%= yield :templates %>
