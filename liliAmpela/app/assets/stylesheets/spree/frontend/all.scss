@@ -7,6 +7,9 @@ $transparent_milk_white: rgba(245,245,245,0.8);
 $white_green: #effff3;
 $light_grey: #BBADAD;
 $light_brown: #403632;
+$very_dark_grey: #2A2929;
+$dark_grey: #303030;
+
 
 body {
   //background-color: $white_green !important;
@@ -116,4 +119,15 @@ body {
 
 .topMargin{
   margin-top: 20px !important;
+}
+
+.discreteText{
+  color: $very_dark_grey;
+}
+.veryDiscreteText{
+  color: $dark_grey;
+}
+
+.centeredText{
+  text-align: center;
 }

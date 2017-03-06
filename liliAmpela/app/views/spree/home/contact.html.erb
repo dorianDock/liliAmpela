@@ -5,5 +5,69 @@
 <%= image_tag 'beach_2.jpg', :class => 'ui image fluid' %>
 
 <h3 class="ui center aligned header">
-  Center
+  <span class="discreteText">
+    WORKSHOP & HEAD QUARTER
+    <br>
+    - RED SAND MADAGASCAR -
+    <br>
+  </span>
+  <span class="veryDiscreteText">
+    Villa Olizety Andohan'i Mandroseza
+    <br>
+    Antananarivo 101
+  </span>
 </h3>
+
+<div class="ui divider lonelyDivider"></div>
+
+<div class="ui stackable grid">
+  <div class="five wide column">
+  </div>
+  <div class="six wide column">
+    <h3 class="ui horizontal divider header">
+      <i class="call icon"></i>
+    </h3>
+    <div class="centeredText">
+      + 261 34 31 004 18 <br> +261 33 37 899 08
+    </div>
+    <h3 class="ui horizontal divider header">
+      <i class="mail outline icon"></i>
+    </h3>
+    <div class="centeredText">
+      For general enquiries: info.liliampela@gmail.com
+    </div>
+  </div>
+  <div class="five wide column">
+  </div>
+</div>
+
+<div class="ui divider lonelyDivider"></div>
+
+<h3 class="ui center aligned header">
+  <span class="discreteText">
+    Nous Contacter
+  </span>
+</h3>
+
+<% @new_contact = Contact.new %>
+<%= form_tag({controller: 'spree/home', action: 'send_contact_message'}, method: 'post', class: 'ui form') do %>
+      <div class="field">
+        <label><%= label_tag :company_name %></label>
+        <%= text_field(:contact, :company_name) %>
+      </div>
+      <div class="field">
+        <label><%= label_tag :email %></label>
+        <%= text_field(:contact, :email) %>
+      </div>
+      <div class="field">
+        <label><%= label_tag :phone %></label>
+        <%= text_field(:contact, :phone) %>
+      </div>
+      <div class="field">
+        <label><%= label_tag :message %></label>
+        <%= text_area(:contact, :message) %>
+      </div>
+      <%= submit_tag 'Envoyer', :class => 'ui fluid large teal submit button' %>
+
+<% end %>
+

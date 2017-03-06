@@ -12,6 +12,7 @@ Rails.application.routes.draw do
     get 'home/team'
     get 'home/story'
     get 'home/contact'
+    post 'home/send_contact_message'
   end
 
 
