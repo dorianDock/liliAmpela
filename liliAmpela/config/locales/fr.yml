@@ -66,3 +66,5 @@ fr:
   contact_mail_phone_label: 'Téléphone: '
   contact_mail_email_label: 'Email: '
   contact_mail_message_label: 'Contenu du message: '
+  contact_mail_normal_message: 'Votre message a bien été envoyé, notre équipe vous répondra sous peu.'
+  contact_mail_error_message: "Merci de remplir un message ou d'utiliser le mail fourni ci-dessus en remplacement."

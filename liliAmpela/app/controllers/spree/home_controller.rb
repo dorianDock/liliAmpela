@@ -17,10 +17,10 @@ module Spree
       contact.phone = permitted_params[:phone]
       contact.message = permitted_params[:message]
       if contact.message.nil?
-        flash[:error] = "Merci de remplir un message ou d'utiliser le mail fourni ci-dessus en remplacement."
+        flash[:error] = I18n.t('contact_mail_error_message')
       else
         Spree::ContactMailer.contact_email(contact.company_name, contact.email, contact.phone, contact.message).deliver_later
-        flash[:success] = 'Votre message a bien été envoyé, notre équipe vous répondra sous peu.'
+        flash[:success] = I18n.t('contact_mail_normal_message')
         redirect_to spree.root_path
       end
     end
