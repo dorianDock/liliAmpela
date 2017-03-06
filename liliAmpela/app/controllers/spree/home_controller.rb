@@ -16,7 +16,7 @@ module Spree
       contact.email = permitted_params[:email]
       contact.phone = permitted_params[:phone]
       contact.message = permitted_params[:message]
-      if contact.send_to_team
+      if ContactMailer.contact_email(contact).deliver_later
         flash[:success] = 'Votre message a bien été envoyé, notre équipe vous répondra sous peu.'
       else
         flash[:error] = "L'envoi du mail a rencontré un problème. Merci d'utiliser le mail fourni ci-dessus en remplacement."

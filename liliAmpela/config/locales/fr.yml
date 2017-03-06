@@ -62,3 +62,7 @@ fr:
 
                 Notre raphia est d'une grande solidité et d'une belle couleur, ce qui nous permet de travailler sereinement nos créations.
                 Et même si notre raphia coloré est teinté à la main, la teinte peut varier légèrement d'un modèle à l'autre, ce qui rend nos modèles tout à fait uniques !"
+  contact_mail_introduction: "Un message vous a été adressé. Les coordonnées de l'emmetteur sont écrites ci-dessous: "
+  contact_mail_phone_label: 'Téléphone: '
+  contact_mail_email_label: 'Email: '
+  contact_mail_message_label: 'Contenu du message: '
