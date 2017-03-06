@@ -1,21 +1,26 @@
+
+<h1 class="ui horizontal divider header">
+  Notre Concept
+</h1>
+
 <h3 class="ui horizontal divider header lonelyDivider">
   La marque
 </h3>
 
 <div class="ui stackable grid">
-  <div class="five wide column">
+  <div class="eight wide column">
 
     <div class="justifiedText">
       <%= simple_format I18n.t('brand_story_1') %>
     </div>
-    <div class="image">
-      <%= image_tag 'team5.jpg' %>
-    </div>
+
+    <%= image_tag 'brand_pic_1.jpg', :class => 'ui image fluid topMargin' %>
+
   </div>
-  <div class="seven wide column">
-    <div class="image">
-      <%= image_tag 'team13.jpg' %>
-    </div>
+  <div class="four wide column">
+
+    <%= image_tag 'brand_pic_2.jpg', :class => 'ui image fluid bottomMargin' %>
+
     <div class="justifiedText">
       <%= simple_format I18n.t('brand_story_2') %>
     </div>
@@ -25,8 +30,75 @@
     <div class="justifiedText">
       <%= simple_format I18n.t('brand_story_3') %>
     </div>
-    <div class="image">
-      <%= image_tag 'team4.jpg' %>
+
+    <%= image_tag 'brand_pic_3.jpg', :class => 'ui image fluid topMargin' %>
+
+  </div>
+</div>
+
+
+
+<h3 class="ui horizontal divider header veryLonelyDivider">
+  L'Atelier
+</h3>
+
+<div class="ui stackable grid">
+  <div class="five wide column">
+    <div class="justifiedText">
+      <%= simple_format I18n.t('workshop_1') %>
     </div>
+    <%= image_tag 'workshop_1.jpg', :class => 'ui image fluid topMargin' %>
+  </div>
+  <div class="five wide column">
+
+    <%= image_tag 'workshop_2.jpg', :class => 'ui image fluid bottomMargin' %>
+
+    <div class="justifiedText">
+      <%= simple_format I18n.t('workshop_2') %>
+    </div>
+  </div>
+  <div class="six wide column">
+
+    <div class="justifiedText">
+      <%= simple_format I18n.t('workshop_3') %>
+    </div>
+
+    <%= image_tag 'workshop_3.jpg', :class => 'ui image fluid topMargin' %>
+
+  </div>
+</div>
+
+
+
+<h3 class="ui horizontal divider header veryLonelyDivider">
+  La matière
+</h3>
+
+<div class="ui stackable grid">
+  <div class="five wide column">
+
+    <div class="justifiedText">
+      <%= simple_format I18n.t('materials_1') %>
+    </div>
+
+    <%= image_tag 'materials_1.jpg', :class => 'ui image fluid topMargin' %>
+
+  </div>
+  <div class="three wide column">
+
+    <%= image_tag 'materials_2.jpg', :class => 'ui image fluid bottomMargin' %>
+
+    <div class="">
+      <%= simple_format I18n.t('materials_2') %>
+    </div>
+  </div>
+  <div class="eight wide column">
+
+    <div class="justifiedText">
+      <%= simple_format I18n.t('materials_3') %>
+    </div>
+
+    <%= image_tag 'materials_3.jpg', :class => 'ui image fluid topMargin' %>
+
   </div>
 </div>
