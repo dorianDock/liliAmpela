@@ -5,17 +5,23 @@
     <%= render template: 'spree/user_sessions/new' %>
   </div>
   <% if Spree::Config[:allow_guest_checkout] %>
+      <div class="ui divider lonelyDivider"></div>
     <div id="guest_checkout" data-hook class="columns omega eight">
-      <h6><%= Spree.t(:guest_user_account) %></h6>
+      <h4><%= I18n.t(:guest_user_account) %></h4>
       <% if flash[:registration_error] %>
         <div class='flash error'><%= flash[:registration_error] %></div>
       <% end %>
-      <%= form_for @order, url: update_checkout_registration_path, method: :put, html: { id: 'checkout_form_registration' } do |f| %>
-        <p>
-          <%= f.label :email, Spree.t(:email) %><br />
-          <%= f.email_field :email, class: 'title' %>
-        </p>
-        <p><%= f.submit Spree.t(:continue), class: 'button primary' %></p>
+      <%= form_for @order, url: update_checkout_registration_path, method: :put, html: { id: 'checkout_form_registration', class: 'ui form' } do |f| %>
+
+          
+          <div class="field">
+            <%= f.label :email, Spree.t(:email) %><br />
+            <div class="ui left icon input">
+              <i class="user icon"></i>
+              <%= f.email_field :email, class: 'title'  %>
+            </div>
+          </div>
+        <%= f.submit Spree.t(:continue), class: 'ui button primary' %>
       <% end %>
     </div>
   <% end %>
