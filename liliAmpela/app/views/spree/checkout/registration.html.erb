@@ -12,8 +12,6 @@
         <div class='flash error'><%= flash[:registration_error] %></div>
       <% end %>
       <%= form_for @order, url: update_checkout_registration_path, method: :put, html: { id: 'checkout_form_registration', class: 'ui form' } do |f| %>
-
-          
           <div class="field">
             <%= f.label :email, Spree.t(:email) %><br />
             <div class="ui left icon input">

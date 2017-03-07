@@ -7,6 +7,7 @@
   <h4><%= Spree.t(:login_as_existing) %></h4>
   <div data-hook="login">
     <%= render partial: 'spree/shared/login' %>
+    <br>
     <%= Spree.t(:or) %>&nbsp;<%= link_to Spree.t(:create_a_new_account), spree.signup_path %> | <%= link_to Spree.t(:forgot_password), spree.recover_password_path %>
   </div>
 </div>
