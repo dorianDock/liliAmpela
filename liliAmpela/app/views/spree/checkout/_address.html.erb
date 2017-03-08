@@ -25,7 +25,7 @@
 <div class="ui divider"></div>
 
 <div class="form-buttons" data-hook="buttons">
-  <%= submit_tag Spree.t(:save_and_continue), :class => 'ui continue button primary' %>
+
   <% if try_spree_current_user %>
     <span data-hook="save_user_address">
       <div class="ui field checkbox" data-hook="use_billing">
@@ -34,4 +34,5 @@
       </div>
     </span>
   <% end %>
+  <%= submit_tag Spree.t(:save_and_continue), :class => 'ui continue button right floated primary' %>
 </div>

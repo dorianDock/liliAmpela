@@ -1,4 +1,4 @@
-<fieldset id='shipping_method' data-hook>
+<div id='shipping_method' data-hook>
   <legend align="center"><%= Spree.t(:delivery) %></legend>
   <div class="inner" data-hook="shipping_method_inner">
     <div id="methods">
@@ -10,16 +10,10 @@
             <strong class="stock-location-name" data-hook="stock-location-name"><%= ship_form.object.stock_location.name %></strong>
           </h3>
 
-          <table class="stock-contents" data-hook="stock-contents">
-            <colgroup>
-              <col style="width: 10%;" />
-              <col style="width: 60%;" />
-              <col style="width: 10%;" />
-              <col style="width: 20%;" />
-            </colgroup>
+          <table class="stock-contents ui celled padded table" data-hook="stock-contents">
             <thead>
               <th></th>
-              <th align='left'><%= Spree.t(:item) %></th>
+              <th><%= Spree.t(:item) %></th>
               <th><%= Spree.t(:qty) %></th>
               <th><%= Spree.t(:price) %></th>
             </thead>
@@ -56,13 +50,7 @@
           <h3 class="stock-location" data-hook="stock-location">
             <%= Spree.t(:unshippable_items) %>
           </h3>
-          <table class="stock-contents" data-hook="stock-missing">
-            <colgroup>
-              <col style="width: 10%;" />
-              <col style="width: 60%;" />
-              <col style="width: 10%;" />
-              <col style="width: 20%;" />
-            </colgroup>
+          <table class="stock-contents ui celled padded table" data-hook="stock-missing">
             <thead>
               <th></th>
               <th align='left'><%= Spree.t(:item) %></th>
@@ -85,16 +73,16 @@
 
     </div>
     <% if Spree::Config[:shipping_instructions] %>
-      <p id="minstrs" data-hook>
+      <div id="minstrs" class="ui field" data-hook>
         <%= form.label :special_instructions, Spree.t(:shipping_instructions) %><br />
         <%= form.text_area :special_instructions, :cols => 40, :rows => 7 %>
-      </p>
+      </div>
     <% end %>
   </div>
-</fieldset>
+</div>
 
 <br />
 
 <div class="form-buttons" data-hook="buttons">
-  <%= submit_tag Spree.t(:save_and_continue), :class => 'continue button primary' %>
+  <%= submit_tag Spree.t(:save_and_continue), :class => 'ui continue button right floated primary' %>
 </div>
