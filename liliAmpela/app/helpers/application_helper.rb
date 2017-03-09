@@ -132,7 +132,7 @@ module ApplicationHelper
 
       css_class_for_icon = ''
       if state == 'address'
-        css_class_for_icon = 'world icon'
+        css_class_for_icon = 'user icon'
       end
       if state == 'delivery'
         css_class_for_icon = 'truck icon'

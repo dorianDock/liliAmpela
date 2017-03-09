@@ -1,12 +1,12 @@
 
-<i class="big shopping bag icon"></i>
+  <i class="big shopping bag icon"></i>
 
   <div id="link-to-cart" class="ui selection list">
 
   <noscript>
     <%= link_to Spree.t(:cart), '/cart', :class => 'item' %>
   </noscript>
-  &nbsp;
+
   <script>Spree.fetch_cart('<%= j spree.cart_link_url %>')</script>
   </div>
 
