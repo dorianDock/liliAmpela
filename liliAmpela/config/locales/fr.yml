@@ -861,100 +861,95 @@ fr:
     adjustment_total: Total d'ajustement
     adjustments: Ajustements
     admin:
-    general_settings:
-      edit:
-        no_cart_tax_country: "No taxes on carts without address"
+      general_settings:
+        edit:
+          no_cart_tax_country: "Pas de taxes sur les paniers sans adresse"
       images:
         index:
-          choose_files: Choose files to upload
-          drag_and_drop: or drag and drop them here
-          image_process_failed: Server failed to process the image
-          upload_images: Upload Images
+          choose_files: Choisir les fichiers à uploader
+          drag_and_drop: ou déposer les fichiers par un drag & drop
+          image_process_failed: Il y a eu une erreur pendant l'enregistrement de l'image
+          upload_images: Uploader des images
       payments:
         source_forms:
           storecredit:
-            not_supported: "Creating store credit payments via the admin is not currently supported."
+            not_supported: "Créer des crédits du magasin depuis le panneau d'administration n'est pas encore pris en charge."
       prices:
-        any_country: "Any Country"
+        any_country: "Tout pays"
         index:
-          amount_greater_than: Amount greater than
-          amount_less_than: Amount less than
-          new_price: New Price
+          amount_greater_than: Montant plus important que
+          amount_less_than: Montant moins important que
+          new_price: Nouveau Prix
         edit:
-          edit_price: Edit Price
+          edit_price: Modifier le Prix
         new:
-          new_price: New Price
+          new_price: Nouveau Prix
       promotions:
         form:
-          starts_at_placeholder: Immediately
-          expires_at_placeholder: Never
+          starts_at_placeholder: Immédiatement
+          expires_at_placeholder: Jamais
       store_credits:
-        add: "Add store credit"
-        amount_authorized: "Amount Authorized"
-        amount_credited: "Amount Credited"
-        amount_used: "Amount Used"
-        back_to_edit: "Back to edit"
-        back_to_user_list: "Back to user list"
+        add: "Ajouter un store credit"
+        amount_authorized: "Montant autorisé"
+        amount_credited: "Montant crédité"
+        amount_used: "Montant utilisé"
+        back_to_edit: "Revenir à l'édition"
+        back_to_user_list: "Revenir à la liste des utilisateurs"
         back_to_store_credit_list: "Store credit list"
-        change_amount: "Change amount"
-        created_by: "Created By"
-        credit_type: "Credit type"
-        current_balance: "Current balance:"
-        edit: "Editing store credit"
-        edit_amount: "Editing store credit amount"
-        history: "Store credit history"
-        invalidate_store_credit: "Invalidating store credit"
-        invalidated: "Invalidated"
-        issued_on: "Issued On"
-        new: "New store credit"
-        no_store_credit_selected: "No store credit was selected"
-        payment_originator: "Payment - Order #%{order_number}"
-        reason_for_updating: "Reason for updating"
-        refund_originator: "Refund - Order #%{order_number}"
+        change_amount: "Changer le montant"
+        created_by: "Créé par"
+        credit_type: "Type de crédit"
+        current_balance: "Montant actuel:"
+        edit: "Changer le store credit"
+        edit_amount: "Modifier le montant du crédit pour le magasin"
+        history: "Historique de crédit"
+        invalidate_store_credit: "Invalider le crédit du magasin"
+        invalidated: "Invalidé"
+        issued_on: "Créé le"
+        new: "Nouveau crédit du magasin"
+        no_store_credit_selected: "Aucun crédit n'a été sélectionné"
+        payment_originator: "Paiement - Commande #%{order_number}"
+        reason_for_updating: "Raison de la modification"
+        refund_originator: "Refund - Commande #%{order_number}"
         resource_name: "store credits"
-        user_originator: "User - %{email}"
-        unable_to_create: "Unable to create store credit"
-        unable_to_update: "Unable to update store credit"
-        unable_to_delete: "Unable to delete store credit"
-        unable_to_invalidate: "Unable to invalidate store credit"
-        select_reason: "Select a reason for this store credit"
-        select_amount_update_reason: "Select a reason for updating the amount"
-        total_unused: "Total unused"
-        type_html_header: "Credit Type"
-        view: "View store credit"
+        user_originator: "Utilisateur - %{email}"
+        unable_to_create: "Le store credit n'a pas pu être créé"
+        unable_to_update: "Le store credit n'a pas pu être modifié"
+        unable_to_delete: "Le store credit n'a pas pu être supprimé"
+        unable_to_invalidate: "Le store credit n'a pas pu être invalidé"
+        select_reason: "Sélectionner une raison pour ce store credit"
+        select_amount_update_reason: "Sélectionner une raison de modification du montant"
+        total_unused: "Total non utilisé"
+        type_html_header: "Type de crédit"
+        view: "Voir le store credit"
         errors:
-          cannot_change_used_store_credit: "Store credit that has been claimed cannot be changed"
-          cannot_be_modified: "cannot be modified"
-          amount_used_cannot_be_greater: "cannot be greater than the credited amount"
-          amount_authorized_exceeds_total_credit: " exceeds the available credit"
-          amount_used_not_zero: "is greater than zero. Can not delete store credit"
-          update_reason_required: "A reason for the change must be selected"
+          cannot_change_used_store_credit: "Store credit qui a été demandé ne peut changer"
+          cannot_be_modified: "ne peut pas être modifié"
+          amount_used_cannot_be_greater: "ne peut pas être plus grand que le montant crédité"
+          amount_authorized_exceeds_total_credit: " excède le crédit disponible"
+          amount_used_not_zero: "est supérieur à zéro. Il est impossible de supprimer le store credit"
+          update_reason_required: "Une raison pour la modification doit être sélectionnée"
       tab:
-      areas: Locations
-              checkout: Refunds and Returns
-              configuration: Configuration
-              display_order: Display Order
-              general: Store
-              option_types: Option Types
-              orders: Orders
-              overview: Overview
-              payments: Payments
-              products: Products
-              promotions: Promotions
-              promotion_categories: Promotion Categories
-              properties: Property Types
-              reports: Reports
-              rma: RMA
-              settings: Settings
-              shipping: Shipping
-              stock: Stock
-              stock_items: Store Stock
-              stock_transfers: Stock Transfers
-              taxes: Taxes
-              taxonomies: Taxonomies
-              taxons: Taxons
-              users: Users
+        areas: Régions
+        checkout: Remboursements et retours
         configuration: Configuration
+        display_order: Afficher la commande
+        general: Magasin
+        option_types: Types d'options
+        orders: Commandes
+        overview: Overview
+        payments: Paiements
+        products: Produits
+        promotions: Promotions
+        promotion_categories: Catégories des promotions
+        properties: Types de propriétés
+        reports: Rapports
+        rma: RMA
+        settings: Paramètres
+        shipping: Expédition
+        stock: Stock
+        stock_items: Stock du Magasin
+        stock_transfers: Transferts du Stock
         option_types: Types d'option
         orders: Commandes
         overview: Vue d'ensemble
@@ -963,9 +958,12 @@ fr:
         properties: Propriétés
         prototypes: Prototypes
         reports: Statistiques
+        taxes: Taxes
         taxonomies: Taxonomies
         taxons: Taxons
         users: Utilisateurs
+      taxons:
+        display_order: Afficher la commande
       user:
         account: Compte
         addresses: Adresses
@@ -976,21 +974,21 @@ fr:
         orders: Commandes
         store_credit: Store Credit
         user_information: Informations de l'utilisateur
-       users:
-              user_page_actions:
-                create_order: Create order for this user
-            variants:
-              table_filter:
-                show_deleted: Show deleted variants
-              new:
-                new_variant: New variant
-              edit:
-                edit_variant: Edit Variant
-              form:
-                dimensions: Dimensions
-                use_product_tax_category: Use Product Tax Category
-                pricing: Pricing
-                pricing_hint: These values are populated from the product details page and
+      users:
+        user_page_actions:
+          create_order: Créer une commande pour ce client
+      variants:
+        table_filter:
+          show_deleted: Montrer les variantes supprimées
+        new:
+          new_variant: Nouvelle Variante
+        edit:
+          edit_variant: Modifier une Variante
+        form:
+          dimensions: Dimensions
+          use_product_tax_category: Utiliser la catégorie de taxe du produit
+          pricing: Prix
+          pricing_hint: Ces valeurs viennent des détails du produit
     administration: Administration
     advertise: Publiciser
     agree_to_privacy_policy: Accepter l'Engagement de Confidentialité
@@ -1033,40 +1031,40 @@ fr:
     backorderable: Peut être acheté même si le stock est vide
     backorderable_default: Peut être acheté même si le stock est vide (défault)
     backordered: En rupture de stock
-    back_to_adjustments_list: Back To Adjustments List
-        back_to_adjustment_reason_list: Back To Adjustment Reason List
-        back_to_countries_list: Back To Countries List
-        back_to_customer_return: Back To Customer Return
-        back_to_customer_return_list: Back To Customer Return List
-        back_to_images_list: Back To Images List
-        back_to_option_types_list: Back To Option Types List
-        back_to_orders_list: Back To Orders List
-        back_to_payment: Back To Payment
-        back_to_payment_methods_list: Back To Payment Methods List
-        back_to_payments_list: Back To Payments List
-        back_to_products_list: Back To Products List
-        back_to_promotions_list: Back To Promotions List
-        back_to_promotion_categories_list: Back To Promotions Categories List
-        back_to_properties_list: Back To Property Types List
-        back_to_reports_list: Back To Reports List
-        back_to_refund_reason_list: Back To Refund Reason List
-        back_to_reimbursement_type_list: Back To Reimbursement Type List
-        back_to_return_authorizations_list: Back To RMA List
-        back_to_rma_reason_list: Back To RMA Reason List
-        back_to_shipping_categories: Back To Shipping Categories
-        back_to_shipping_categories_list: Back To Shipping Categories List
-        back_to_shipping_methods_list: Back To Shipping Methods List
-        back_to_states_list: Back To States List
-        back_to_stock_locations_list: Back to Stock Locations List
-        back_to_stock_movements_list: Back to Stock Movements List
-        back_to_stock_transfers_list: Back to Stock Transfers List
-        back_to_store: View store
-        back_to_tax_categories_list: Back To Tax Categories List
-        back_to_tax_rates_list: Back To Tax Rates List
-        back_to_taxonomies_list: Back To Taxonomies List
-        back_to_trackers_list: Back To Trackers List
-        back_to_users_list: Back To Users List
-        back_to_zones_list: Back To Zones List
+    back_to_adjustments_list: Retour à la liste des ajustements
+    back_to_adjustment_reason_list: Retour à la liste des raisons d'ajustement
+    back_to_countries_list: Retour à la liste des pays
+    back_to_customer_return: Retour aux retours clients
+    back_to_customer_return_list: Retour à la liste des retours clients
+    back_to_images_list: Retour à la liste des images
+    back_to_option_types_list: Retour à la liste de types d'options
+    back_to_orders_list: Retour à la liste des commandes
+    back_to_payment: Retour au paiement
+    back_to_payment_methods_list: Retour à la liste des méthodes de paiement
+    back_to_payments_list: Retour à la liste des paiements
+    back_to_products_list: Retour à la liste des produits
+    back_to_promotions_list: Retour à la liste des promotions
+    back_to_promotion_categories_list: Retour à la liste des catégories de promotions
+    back_to_properties_list: Retour à la liste des types de propriétés
+    back_to_reports_list: Retour à la liste des rapports
+    back_to_refund_reason_list: Retour à la liste des raisons de remboursement
+    back_to_reimbursement_type_list: Retour à la liste des types de remboursement
+    back_to_return_authorizations_list: Retour à la liste des RMA
+    back_to_rma_reason_list: Retour à la liste des raisons de RMA
+    back_to_shipping_categories: Retour aux catégories de livraison
+    back_to_shipping_categories_list: Retour à la liste des catégories de livraison
+    back_to_shipping_methods_list: Retour à la liste des méthodes d'expédition
+    back_to_states_list: Retour à la liste des états
+    back_to_stock_locations_list: Retour à la liste des lieux de stock
+    back_to_stock_movements_list: Retour à la liste des mouvements de Stock
+    back_to_stock_transfers_list: Retour à la liste des transferts de Stock
+    back_to_store: Voir le magasin
+    back_to_tax_categories_list: Back To Tax Categories List
+    back_to_tax_rates_list: Back To Tax Rates List
+    back_to_taxonomies_list: Back To Taxonomies List
+    back_to_trackers_list: Back To Trackers List
+    back_to_users_list: Back To Users List
+    back_to_zones_list: Back To Zones List
     backorders_allowed: Ruptures de stock autorisées
     balance_due: Solde dû
     base_amount: Montant de base
@@ -1082,16 +1080,16 @@ fr:
     cancel_inventory: 'Cancel Items'
     canceled_at: Annulé le
     canceler: Annulateur
-     cancellation: Cancellation
+    cancellation: Cancellation
     cannot_create_customer_returns: Impossible de créer des retours tant que cette commande n'a pas d'articles expédiés.
     cannot_create_payment_without_payment_methods: Vous ne pouvez pas créer un paiement pour une commande sans aucun moyen de paiement défini.
     cannot_create_payment_link: Please define some payment methods first.
     cannot_create_returns: Ne peut créer de retour tant que cette commande n'a pas été expédiée.
-    cannot_rebuild_shipments_order_completed: Cannot rebuild shipments for a completed order.
-        cannot_rebuild_shipments_shipments_not_pending: Cannot rebuild shipments for an order with non-pending shipments.
+    cannot_rebuild_shipments_order_completed: Impossible de refaire les expéditions pour une commande complétée.
+    cannot_rebuild_shipments_shipments_not_pending: Impossible de refaire les expéditions pour une commande sans expéditions non définies.
     cannot_perform_operation: Ne peut pas accomplir l'action demandée
     cannot_set_shipping_method_without_address: La méthode d'expédition ne peut être définie tant que les données du client ne sont pas spécifiées
-     cannot_update_email: You do not have access to update this user's email address.
+    cannot_update_email: Vous n'avez pas les autorisations nécessaires pour l'addresse e-mail de cet utilisateur.
     capture: accepté
     capture_events: Événements d'acceptation
     card_code: Code de la carte
@@ -1103,12 +1101,12 @@ fr:
       one: 'Sous-total (1 article)'
       other: 'Sous-total (%{count} articles)'
     carton_external_number: External Number
-          carton_orders: 'Other orders with Carton'
+    carton_orders: 'Other orders with Carton'
     categories: Catégories
     category: Categorie
     charged: Chargé
-    check: Check
-        check_stock_on_transfer: Check stock on transfer
+    check: Vérifier
+    check_stock_on_transfer: Vérifier le transfert du stock
     check_for_spree_alerts: Recevoir les alertes de Spree
     checkout: Passer la commande
     choose_a_customer: Choisissez un client
@@ -1124,7 +1122,7 @@ fr:
     clone: Cloner
     close: Fermer
     close_stock_transfer:
-          confirm: "Are you sure you want to close this stock transfer?\n\nStock levels will be changed for the received items and you will no longer be able to edit the stock transfer."
+      confirm: "Are you sure you want to close this stock transfer?\n\nStock levels will be changed for the received items and you will no longer be able to edit the stock transfer."
     close_all_adjustments: Fermer tous les ajustements
     code: Code
     company: Entreprise
@@ -1238,19 +1236,19 @@ fr:
     editing_user: Édition d'un utilisateur
     editing_zone: Édition d'une zone
     eligibility_errors:
-          messages:
-            has_excluded_product: Your cart contains a product that prevents this coupon code from being applied.
-            has_excluded_taxon: Your cart contains a product from an excluded category that prevents this coupon code from being applied.
-            item_total_less_than: This coupon code can't be applied to orders less than %{amount}.
-            item_total_less_than_or_equal: This coupon code can't be applied to orders less than or equal to %{amount}.
-            limit_once_per_user: This coupon code can only be used once per user.
-            missing_product: This coupon code can't be applied because you don't have all of the necessary products in your cart.
-            missing_taxon: You need to add a product from all applicable categories before applying this coupon code.
-            no_applicable_products: You need to add an applicable product before applying this coupon code.
-            no_matching_taxons: You need to add a product from an applicable category before applying this coupon code.
-            no_user_or_email_specified: You need to login or provide your email before applying this coupon code.
-            no_user_specified: You need to login before applying this coupon code.
-            not_first_order: This coupon code can only be applied to your first order.
+      messages:
+        has_excluded_product: Your cart contains a product that prevents this coupon code from being applied.
+        has_excluded_taxon: Your cart contains a product from an excluded category that prevents this coupon code from being applied.
+        item_total_less_than: This coupon code can't be applied to orders less than %{amount}.
+        item_total_less_than_or_equal: This coupon code can't be applied to orders less than or equal to %{amount}.
+        limit_once_per_user: This coupon code can only be used once per user.
+        missing_product: This coupon code can't be applied because you don't have all of the necessary products in your cart.
+        missing_taxon: You need to add a product from all applicable categories before applying this coupon code.
+        no_applicable_products: You need to add an applicable product before applying this coupon code.
+        no_matching_taxons: You need to add a product from an applicable category before applying this coupon code.
+        no_user_or_email_specified: You need to login or provide your email before applying this coupon code.
+        no_user_specified: You need to login before applying this coupon code.
+        not_first_order: This coupon code can only be applied to your first order.
     email: E-mail
     empty: Vide
     empty_cart: Vider le panier
@@ -1260,18 +1258,12 @@ fr:
     environment: Environnement
     error: erreur
     errors:
-          messages:
-            cannot_modify_transfer_item_closed_stock_transfer: Transfer items that are part of a closed stock transfer cannot be modified.
-            cannot_delete_finalized_stock_transfer: Finalized stock transfers cannot be destroyed.
-            cannot_delete_transfer_item_with_finalized_stock_transfer: Transfer items that are part of a finalized stock transfer cannot be destroyed.
-            cannot_update_expected_transfer_item_with_finalized_stock_transfer: The expected quantity cannot be updated on transfer items that are part of a finalized stock transfer.
-            could_not_create_taxon: Could not create taxon
-            transfer_item_insufficient_stock: Transfer item's variant does not have enough stock in the stock transfer's source location
-            no_payment_methods_available: No payment methods are configured for this environment
-            no_shipping_methods_available: No shipping methods available for selected location, please change your address and try again.
-
-    errors:
       messages:
+        cannot_modify_transfer_item_closed_stock_transfer: Transfer items that are part of a closed stock transfer cannot be modified.
+        cannot_delete_finalized_stock_transfer: Finalized stock transfers cannot be destroyed.
+        cannot_delete_transfer_item_with_finalized_stock_transfer: Transfer items that are part of a finalized stock transfer cannot be destroyed.
+        cannot_update_expected_transfer_item_with_finalized_stock_transfer: The expected quantity cannot be updated on transfer items that are part of a finalized stock transfer.
+        transfer_item_insufficient_stock: Transfer item's variant does not have enough stock in the stock transfer's source location
         could_not_create_taxon: Impossible de créer une taxon
         no_payment_methods_available: Aucune méthode de paiement n'est configurée pour cet environnement
         no_shipping_methods_available: Pas de moyen de livraison disponible pour la destination choisie, changez l'adresse et réessayez.
@@ -1301,32 +1293,34 @@ fr:
     expiration: Expiration
     extension: Prolongation
     existing_shipments: Existing shipments
-        hints:
-          spree/price:
-            country: "This determines in what country the price is valid.<br/>Default: Any Country"
-            master_variant: "Changing master variant prices will not change variant prices below, but will be used to populate all new variants"
-            options: "These options are used to create variants in the variants table. They can be changed in the variants tab"
-          spree/product:
-            promotionable: "This determines whether or not promotions can apply to this product.<br/>Default: Checked"
-            shipping_category: "This determines what kind of shipping this product requires.<br/> Default: Default"
-            tax_category: "This determines what kind of taxation is applied to this product.<br/> Default: None"
-          spree/promotion:
-            starts_at: "This determines when the promotion can be applied to orders. <br/> If no value is specified, the promotion will be immediately available."
-            expires_at: "This determines when the promotion expires. <br/> If no value is specified, the promotion will never expires."
-          spree/store:
-            cart_tax_country_iso: "This determines which country is used for taxes on carts (orders which don't yet have an address).<br/> Default: None."
-          spree/variant:
-            tax_category: "This determines what kind of taxation is applied to this variant.<br/> Default: Use tax category of the product associated with this variant"
-            deleted: "Deleted Variant"
-            deleted_explanation: "This variant was deleted on %{date}."
-            deleted_explanation_with_replacement: "This variant was deleted on %{date}. It has since been replaced by another with the same SKU."
-        failed_payment_attempts: Failed Payment Attempts
+    hints:
+      spree/price:
+        country: "This determines in what country the price is valid.<br/>Default: Any Country"
+        master_variant: "Changing master variant prices will not change variant prices below, but will be used to populate all new variants"
+        options: "These options are used to create variants in the variants table. They can be changed in the variants tab"
+      spree/product:
+        promotionable: "This determines whether or not promotions can apply to this product.<br/>Default: Checked"
+        shipping_category: "This determines what kind of shipping this product requires.<br/> Default: Default"
+        tax_category: "This determines what kind of taxation is applied to this product.<br/> Default: None"
+      spree/promotion:
+        starts_at: "This determines when the promotion can be applied to orders. <br/> If no value is specified, the promotion will be immediately available."
+        expires_at: "This determines when the promotion expires. <br/> If no value is specified, the promotion will never expires."
+      spree/store:
+        cart_tax_country_iso: "This determines which country is used for taxes on carts (orders which don't yet have an address).<br/> Default: None."
+      spree/variant:
+        tax_category: "This determines what kind of taxation is applied to this variant.<br/> Default: Use tax category of the product associated with this variant"
+        deleted: "Deleted Variant"
+        deleted_explanation: "This variant was deleted on %{date}."
+        deleted_explanation_with_replacement: "This variant was deleted on %{date}. It has since been replaced by another with the same SKU."
+    failed_payment_attempts: Failed Payment Attempts
     failed_payment_attempts: Tentatives de paiement échouées
     filename: Nom du fichier
     fill_in_customer_info: Merci de remplir les informations client.
     filter: Filtrer
     filter_results: Filtrer les resultats
     finalize: Finaliser
+    finalize_stock_transfer:
+      confirm: "Are you sure you want to finalize this stock transfer?\n\nYou will no longer be able to add or edit any transfer items"
     finalized: Finaliser
     find_a_taxon: Trouver un taxon
     first_item: Premier article
@@ -1351,6 +1345,10 @@ fr:
     guest_user_account: Invité
     has_no_shipped_units: Aucune unité à été livré
     height: Taille
+    helpers:
+      products:
+        price_diff_add_html: "(Add: %{amount_html})"
+        price_diff_subtract_html: "(Subtract: %{amount_html})"
     hide_cents: Cacher les centimes
     home: Accueil
     i18n:
@@ -1370,8 +1368,7 @@ fr:
     image: Image
     images: Images
     implement_eligible_for_return: "Must implement #eligible_for_return? for your EligibilityValidator."
-        implement_requires_manual_intervention: "Must implement #requires_manual_intervention? for your EligibilityValidator."
-        inactive: Inactive
+    implement_requires_manual_intervention: "Must implement #requires_manual_intervention? for your EligibilityValidator."
     inactive: Inactif
     incl: inclus
     included_in_price: Inclus dans le prix
@@ -1397,11 +1394,11 @@ fr:
     inventory_error_flash_for_insufficient_quantity: Un article de votre panier n'est plus disponible.
     inventory_state: État de l'inventaire
     inventory_states:
-          backordered: backordered
-          canceled: canceled
-          on_hand: on hand
-          returned: returned
-          shipped: shipped
+      backordered: backordered
+      canceled: canceled
+      on_hand: on hand
+      returned: returned
+      shipped: shipped
     is_not_available_to_shipment_address: n'est pas disponible pour l'adresse de livraison
     iso_name: Nom ISO
     item: Article
@@ -1427,11 +1424,11 @@ fr:
     line_item_adjustments:
     list: Liste
     listing_countries: Countries
-        listing_orders: Orders
-        listing_products: Products
-        listing_reports: Reports
-        listing_tax_categories: Tax Categories
-        listing_users: Users
+    listing_orders: Orders
+    listing_products: Products
+    listing_reports: Reports
+    listing_tax_categories: Tax Categories
+    listing_users: Users
     loading: Chargement
     locale_changed: Paramètres régionaux changés
     location: Emplacement
@@ -1510,10 +1507,10 @@ fr:
     next: Suivant
     no_actions_added: Aucune action ajoutée
     no_images_found: No images found
-        no_inventory_selected: No inventory selected
-        no_orders_found: No orders found
-        no_option_values_on_product_html: "This product has no associated option values. Add some to it through Option Types in the %{link}."
-        no_payment_methods_found: No payment methods found
+    no_inventory_selected: No inventory selected
+    no_orders_found: No orders found
+    no_option_values_on_product_html: "This product has no associated option values. Add some to it through Option Types in the %{link}."
+    no_payment_methods_found: No payment methods found
     no_payment_found: Aucun paiement trouvé
     no_pending_payments: Aucun paiement en attente
     no_products_found: Aucun article trouvé
@@ -1522,14 +1519,14 @@ fr:
     no_returns_found: Aucun retour trouvé
     no_rules_added: Aucune règle ajoutée
     no_resource: 'No %{resource} found.'
-        no_resource_found_html: 'No %{resource} found, %{add_one_link}!'
-        no_resource_found_link: Add One
-        no_resource_found: ! 'No %{resource} found'
+    no_resource_found_html: 'No %{resource} found, %{add_one_link}!'
+    no_resource_found_link: Add One
+    no_resource_found: ! 'No %{resource} found'
     no_shipping_method_selected: Aucune méthode de livraison sélectionnée
     no_state_changes: Aucun changement de province, de région ou d'état
     no_tracking_present: Les détails pour le traqueur ne sont pas présents
     no_variants_found: No variants found.
-        no_variants_found_try_again: No variants found. Try changing the search values.
+    no_variants_found_try_again: No variants found. Try changing the search values.
     none: Aucun
     none_selected: Aucune sélection
     normal_amount: Montant normal
@@ -1538,7 +1535,7 @@ fr:
     not_enough_stock: Il n'y a pas assez de stock à l'emplacement source pour compléter ce transfert.
     not_found: "%{resource} n'est pas trouvé"
     note: note
-     note_already_received_a_refund: "Note: This order has already received a refund.  Make sure the above reimbursement amount is correct."
+    note_already_received_a_refund: "Note: This order has already received a refund.  Make sure the above reimbursement amount is correct."
     notice_messages:
       product_cloned: Le produit a été cloné
       product_deleted: Le produit a été supprimé
@@ -1584,18 +1581,18 @@ fr:
         thanks: Merci d'avoir fait affaire avec nous.
         total: ! 'Total de la commande: %{total}'
       inventory_cancellation:
-              dear_customer: Dear Customer,
-              instructions: Some items in your order have been CANCELED.  Please retain this cancellation information for your records.
-              order_summary_canceled: Canceled Items
-              subject: Cancellation of Items
+        dear_customer: Dear Customer,
+        instructions: Some items in your order have been CANCELED.  Please retain this cancellation information for your records.
+        order_summary_canceled: Canceled Items
+        subject: Cancellation of Items
     order_not_found: Impossible de trouver votre commande. Merci d'essayer à nouveau.
     order_mutex_admin_error: Order is being modified by someone else. Please try again.
-        order_mutex_error: Something went wrong. Please try again.
+    order_mutex_error: Something went wrong. Please try again.
     order_number: Facture %{number}
     order_please_refresh: Order is not ready to be completed. Please refresh totals.
     order_processed_successfully: Votre commande a été traitée avec succès
     order_ready_for_confirm: Order ready for confirmation
-        order_refresh_totals: Refresh Totals
+    order_refresh_totals: Refresh Totals
     order_resumed: Résumé de votre commande
     order_state:
       address: adresse
@@ -1628,10 +1625,11 @@ fr:
     pay: payer
     payment: Paiement
     payment_amount: Payment Amount
-     payment_could_not_be_created: Payment could not be created.
-        payments_failed_count:
-          one: 1 Payment
-          other: '%{count} Payments'
+    payment_could_not_be_created: Payment could not be created.
+    payments_failed_count:
+      one: 1 Payment
+      other: '%{count} Payments'
+    payment_identifier: Payment Identifier
     payment_information: Information sur le paiement
     payment_method: Méthode de paiement
     payment_method_not_supported: Ce méthode de paiement n'est pas supportée
@@ -1662,9 +1660,9 @@ fr:
     populate_get_error: Quelque chose s'est passé mal. Essayez S'il vous plaît d'ajouter l'article de nouveau.
     powered_by: Réalisé avec
     pre_tax_refund_amount: Pre-Tax Refund Amount
-        pre_tax_amount: Pre-Tax Amount
-        pre_tax_total: Pre-Tax Total
-        preferred_reimbursement_type: Preferred Reimbursement Type
+    pre_tax_amount: Pre-Tax Amount
+    pre_tax_total: Pre-Tax Total
+    preferred_reimbursement_type: Preferred Reimbursement Type
     presentation: Présentation
     previous: Précédent
     previous_state_missing:
@@ -1672,7 +1670,7 @@ fr:
     price_range: Prix
     price_sack: Prix du sac
     preference_source_none: '(custom)'
-        preference_source_using: 'Using static preferences "%{name}"'
+    preference_source_using: 'Using static preferences "%{name}"'
     process: Processus
     product: Produit
     product_details: Détails du produit
@@ -1750,12 +1748,12 @@ fr:
         name: Répétition première achat depuis
         form_text: Appliquer cette promotion aux utilisateurs dont dernière commande était plus de X jours
       user_role:
-              description: Order includes User with specified Role(s)
-              name: User Role(s)
-    promotion_uses:
+        description: Order includes User with specified Role(s)
+        name: User Role(s)
+    promotion_uses: Promotion uses
     promotionable:
     promotions: Promotions
-    propagate_all_variants:
+    propagate_all_variants: Propagate all variants
     properties: Propriétés
     property: Propriété
     prototype: Prototype
@@ -1773,10 +1771,10 @@ fr:
     receive_stock: Recevoir le stock
     received: Reçu
     receive_stock: Receive Stock
-        received_items: Received Items
-        received_successfully: Received Successfully
-        receiving: Receiving
-        receiving_match: Receiving match
+    received_items: Received Items
+    received_successfully: Received Successfully
+    receiving: Receiving
+    receiving_match: Receiving match
     reception_status: Statut de réception
     reference: Référence
     refund: Remboursement
@@ -1791,14 +1789,14 @@ fr:
     reimbursement: Remboursement
     reimbursement_mailer:
       reimbursement_email:
-            days_to_send: ! 'You have %{days} days to send back any items awaiting exchange.'
-            dear_customer: Dear Customer,
-            exchange_summary: Exchange Summary
-            for: for
-            instructions: Your reimbursement has been processed.
-            refund_summary: Refund Summary
-            subject: Reimbursement Notification
-            total_refunded: ! 'Total refunded: %{total}'
+        days_to_send: ! 'You have %{days} days to send back any items awaiting exchange.'
+        dear_customer: Dear Customer,
+        exchange_summary: Exchange Summary
+        for: for
+        instructions: Your reimbursement has been processed.
+        refund_summary: Refund Summary
+        subject: Reimbursement Notification
+        total_refunded: ! 'Total refunded: %{total}'
     reimbursement_perform_failed:
     reimbursement_status:
     reimbursement_type:
@@ -1867,10 +1865,12 @@ fr:
     settings: Paramètres
     ship: livraison
     ship_address: Adresse de livraison
+    ship_stock_transfer:
+      confirm: "Are you sure you want to mark this stock transfer as shipping?\n\nYou will no longer be able to make changes to the stock transfer"
     ship_total: Envois Totales
     shipment: Livraison
-    shipment_adjustments:
-    shipment_details:
+    shipment_adjustments: "Shipment adjustments"
+    shipment_details: "From %{stock_location} via %{shipping_method}"
     shipment_mailer:
       shipped_email:
         dear_customer: Cher client,\n
@@ -1904,14 +1904,14 @@ fr:
     shipping_methods: Méthodes de livraison
     shipping_price_sack: Prix groupé
     shipping_rate:
-          display_price:
-            display_price_with_explanations: "%{price} (%{explanations})"
-            tax_label_separator: ", "
-        shipping_rate_tax:
-          label:
-            sales_tax: "+ %{amount} %{tax_rate_name}"
-            vat: "incl. %{amount} %{tax_rate_name}"
-            vat_refund: "excl. %{amount} %{tax_rate_name}"
+      display_price:
+        display_price_with_explanations: "%{price} (%{explanations})"
+        tax_label_separator: ", "
+    shipping_rate_tax:
+      label:
+        sales_tax: "+ %{amount} %{tax_rate_name}"
+        vat: "incl. %{amount} %{tax_rate_name}"
+        vat_refund: "excl. %{amount} %{tax_rate_name}"
     shipping_total: Total livraison
     shop_by_taxonomy: Acheter par %{taxonomy}
     shopping_cart: Panier
@@ -1925,12 +1925,12 @@ fr:
     skus:
     slug: Identifiant
     source: Origine
+    source_location: Source location
     special_instructions: Instructions spéciales
     split: Diviser
     spree_gateway_error_flash_for_checkout: Il y a eu un problème avec vos informations de paiement. Merci de bien vouloir les vérifier et de réessayer.
     ssl:
-          change_protocol: "Please switch to using HTTP (rather than HTTPS) and retry this request."
-        start: Start
+      change_protocol: "Please switch to using HTTP (rather than HTTPS) and retry this request."
     start: Départ
     state: Province / Région / État
     state_based: Basé sur une région
@@ -1983,6 +1983,39 @@ fr:
     stock_transfers: Transferts de Stock
     stop: Fin
     store: Enregistrer
+    store_credit:
+      actions:
+        invalidate: Invalidate
+      credit_allocation_memo: "This is a credit from store credit ID %{id}"
+      currency_mismatch: "Store credit currency does not match order currency"
+      display_action:
+        adjustment: Adjustment
+        allocation: Added
+        capture: Used
+        credit: Credit
+        invalidate: Invalidated
+        void: Credit
+        admin:
+          authorize: "Authorized"
+          eligible: "Eligibility Verified"
+          void: "Voided"
+      errors:
+        unable_to_fund: "Unable to pay for order using store credits"
+        cannot_invalidate_uncaptured_authorization: "Cannot invalidate a store credit with an uncaptured authorization"
+      expiring: Expiring
+      insufficient_authorized_amount: "Unable to capture more than authorized amount"
+      insufficient_funds: "Store credit amount remaining is not sufficient"
+      non_expiring: Non-expiring
+      select_one_store_credit: "Select store credit to go towards remaining balance"
+      store_credit: Store Credit
+      successful_action: "Successful store credit %{action}"
+      unable_to_credit: "Unable to credit code: %{auth_code}"
+      unable_to_void: "Unable to void code: %{auth_code}"
+      unable_to_find: "Could not find store credit"
+      unable_to_find_for_action: "Could not find store credit for auth code: %{auth_code} for action: %{action}"
+      user_has_no_store_credits: "User does not have any available store credit"
+    store_credit_category:
+      default: Default
     street_address: Adresse
     street_address_2: Adresse (suite)
     subtotal: Sous-total
@@ -2051,8 +2084,8 @@ fr:
     type_to_search: Type à rechercher
     unable_to_connect_to_gateway: N'arrive pas à se connecter à la méthode de paiement.
     unable_to_create_reimbursements: Unable to create reimbursements because there are items pending manual intervention.
-        unable_to_create_stock_transfer: Unable to create the stock transfer
-        unfinalize_all_adjustments: Unfinalize All Adjustments
+    unable_to_create_stock_transfer: Unable to create the stock transfer
+    unfinalize_all_adjustments: Unfinalize All Adjustments
     under_price: Moins de %{price}
     unlock: Déverrouiller
     unrecognized_card_type: Le type de la carte n'est pas reconnu
@@ -2067,13 +2100,11 @@ fr:
     user: Utilisateur
     user_rule:
       choose_users: Sélectionner un utilisateur
-    user_rule:
-          choose_users: Choose users
-        user_role_rule:
-          choose_roles: Choose Roles
-          label: User must contain %{select} of these roles
-          match_all: all
-          match_any: at least one
+    user_role_rule:
+      choose_roles: Choose Roles
+      label: User must contain %{select} of these roles
+      match_all: all
+      match_any: at least one
     users: Utilisateurs
     validation:
       cannot_be_less_than_shipped_units: ne peut pas être inférieur à la quantité livrée.
@@ -2087,11 +2118,11 @@ fr:
     variant: Variante
     variant_placeholder: Choisissez une variante
     variant_pricing: Variant Pricing
-        variant_properties: Variant Properties
-        variant_search: Variant Search
-        variant_search_placeholder: "SKU or Option Value"
-        variant_to_add: Variant to add
-        variant_to_be_received: Variant to be received
+    variant_properties: Variant Properties
+    variant_search: Variant Search
+    variant_search_placeholder: "SKU or Option Value"
+    variant_to_add: Variant to add
+    variant_to_be_received: Variant to be received
     variants: Variantes
     version: Version
     void: Annuler
