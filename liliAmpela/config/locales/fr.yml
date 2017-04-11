@@ -1237,18 +1237,18 @@ fr:
     editing_zone: Édition d'une zone
     eligibility_errors:
       messages:
-        has_excluded_product: Your cart contains a product that prevents this coupon code from being applied.
-        has_excluded_taxon: Your cart contains a product from an excluded category that prevents this coupon code from being applied.
-        item_total_less_than: This coupon code can't be applied to orders less than %{amount}.
-        item_total_less_than_or_equal: This coupon code can't be applied to orders less than or equal to %{amount}.
-        limit_once_per_user: This coupon code can only be used once per user.
-        missing_product: This coupon code can't be applied because you don't have all of the necessary products in your cart.
-        missing_taxon: You need to add a product from all applicable categories before applying this coupon code.
-        no_applicable_products: You need to add an applicable product before applying this coupon code.
-        no_matching_taxons: You need to add a product from an applicable category before applying this coupon code.
-        no_user_or_email_specified: You need to login or provide your email before applying this coupon code.
-        no_user_specified: You need to login before applying this coupon code.
-        not_first_order: This coupon code can only be applied to your first order.
+        has_excluded_product: Votre panier contient un produit qui empêche cette réduction d'être appliquée.
+        has_excluded_taxon: Votre panier contient un produit d'une catégorie exclue par cette réduction.
+        item_total_less_than: Cette réduction ne peut pas être appliquée sur des commandes de moins de %{amount}.
+        item_total_less_than_or_equal: Cette réduction ne peut pas être appliquée sur des commandes de moins ou égales à %{amount}.
+        limit_once_per_user: Cette réduction peut être utilisée seulement une fois par utilisateur.
+        missing_product: Cette réduction ne peut pas être appliquée, car il vous manque les produits nécessaires à son application dans votre commande.
+        missing_taxon: Vous devez ajouter un produit de toute catégorie concernée pour appliquer cette réduction.
+        no_applicable_products: Vous devez ajouter un produit compatible avant d'appliquer cette réduction.
+        no_matching_taxons: Vous devez ajouter un produit d'une catégorie compatible avant d'appliquer cette réduction.
+        no_user_or_email_specified: Vous devez vous connecter ou renseigner votre addresse e mail avant de bénéficier de cette réduction.
+        no_user_specified: Vous devez vous connecter avant de bénéficier de cette réduction.
+        not_first_order: Cette réduction ne s'applique qu'à votre première commande
     email: E-mail
     empty: Vide
     empty_cart: Vider le panier
@@ -1292,7 +1292,7 @@ fr:
     expedited_exchanges_warning:
     expiration: Expiration
     extension: Prolongation
-    existing_shipments: Existing shipments
+    existing_shipments: Cargaisons existantes
     hints:
       spree/price:
         country: "This determines in what country the price is valid.<br/>Default: Any Country"
@@ -1592,7 +1592,7 @@ fr:
     order_please_refresh: Order is not ready to be completed. Please refresh totals.
     order_processed_successfully: Votre commande a été traitée avec succès
     order_ready_for_confirm: Order ready for confirmation
-    order_refresh_totals: Refresh Totals
+    order_refresh_totals: Recalculer les totaux
     order_resumed: Résumé de votre commande
     order_state:
       address: adresse
@@ -1624,12 +1624,12 @@ fr:
     path: Chemin
     pay: payer
     payment: Paiement
-    payment_amount: Payment Amount
-    payment_could_not_be_created: Payment could not be created.
+    payment_amount: Montant du paiement
+    payment_could_not_be_created: Le paiement n'a pas pu être créé.
     payments_failed_count:
-      one: 1 Payment
-      other: '%{count} Payments'
-    payment_identifier: Payment Identifier
+      one: 1 Paiement
+      other: '%{count} Paiements'
+    payment_identifier: Identification du paiement
     payment_information: Information sur le paiement
     payment_method: Méthode de paiement
     payment_method_not_supported: Ce méthode de paiement n'est pas supportée
@@ -1789,14 +1789,14 @@ fr:
     reimbursement: Remboursement
     reimbursement_mailer:
       reimbursement_email:
-        days_to_send: ! 'You have %{days} days to send back any items awaiting exchange.'
-        dear_customer: Dear Customer,
-        exchange_summary: Exchange Summary
-        for: for
-        instructions: Your reimbursement has been processed.
-        refund_summary: Refund Summary
-        subject: Reimbursement Notification
-        total_refunded: ! 'Total refunded: %{total}'
+        days_to_send: ! 'Le délai de renvoi des articles est de %{days} jours.'
+        dear_customer: Cher(ère) client(e),
+        exchange_summary: Résumé des échanges
+        for: pour
+        instructions: Votre remboursement a bien été effectué.
+        refund_summary: Résumé des remboursements
+        subject: Notification de remboursement
+        total_refunded: ! 'Total remboursé: %{total}'
     reimbursement_perform_failed:
     reimbursement_status:
     reimbursement_type:
@@ -2101,7 +2101,7 @@ fr:
     user_rule:
       choose_users: Sélectionner un utilisateur
     user_role_rule:
-      choose_roles: Choose Roles
+      choose_roles: Choisir les rôles
       label: User must contain %{select} of these roles
       match_all: all
       match_any: at least one
@@ -2117,12 +2117,12 @@ fr:
     value: Valeur
     variant: Variante
     variant_placeholder: Choisissez une variante
-    variant_pricing: Variant Pricing
-    variant_properties: Variant Properties
-    variant_search: Variant Search
+    variant_pricing: Prix de la variante
+    variant_properties: Propriétés de la variante
+    variant_search: Chercher une variante
     variant_search_placeholder: "SKU or Option Value"
-    variant_to_add: Variant to add
-    variant_to_be_received: Variant to be received
+    variant_to_add: Variante à ajouter
+    variant_to_be_received: Variante en cours de réception.
     variants: Variantes
     version: Version
     void: Annuler
@@ -2132,7 +2132,7 @@ fr:
     width: Largeur
     year: Année
     you_have_no_orders_yet: Vous n'avez pas encore commandé.
-    you_cannot_undo_action: You will not be able to undo this action
+    you_cannot_undo_action: Cette action est irréversible.
     your_cart_is_empty: Votre panier est vide
     your_order_is_empty_add_product: Votre commande est vide. Merci d'ajouter au moins un produit
     zip: Code postal
