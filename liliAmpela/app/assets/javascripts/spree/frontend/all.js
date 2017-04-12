@@ -19,7 +19,7 @@ function triggerSlideShow(){
         infinite: true,
         centerMode: true,
         centerPadding: '10px',
-        slidesToShow: 3,
+        slidesToShow: 4,
         autoplay: true,
         autoplaySpeed: 2000,
         dots: true

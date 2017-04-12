@@ -10,6 +10,32 @@ $light_brown: #403632;
 $very_dark_grey: #2A2929;
 $dark_grey: #303030;
 
+/* Separate fonts wth coma when needed */
+@font-face {
+  font-family: 'lilifont';
+  src: url('/assets/lilifont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+.liliMenu{
+  font-family: 'lilifont' !important;
+  font-size: 1.6em !important;
+}
+
+.specificFont{
+  font-family: 'lilifont' !important;
+}
+
+.inlineblock{
+  display: inline-block !important;
+}
+
+#link-to-cart{
+    vertical-align: bottom;
+}
 
 body {
   //background-color: $white_green !important;
@@ -151,6 +177,10 @@ body {
 }
 
 .stickyDivider{
-  margin-top: 0.3rem !important;
+  margin-top: 0.6rem !important;
   margin-bottom: 0.3rem !important;
+}
+
+.forcedBlack{
+  color: black;
 }

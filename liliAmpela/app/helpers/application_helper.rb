@@ -12,7 +12,7 @@ module ApplicationHelper
       #css_class = 'full'
     end
 
-    link_to text.html_safe, spree.cart_path, class: "cart-info item"
+    link_to text.html_safe, spree.cart_path, class: "cart-info item specificFont"
   end
 
   def custom_product_breadcrumbs(separator = '&nbsp;&raquo;&nbsp;', breadcrumb_class = 'inline')

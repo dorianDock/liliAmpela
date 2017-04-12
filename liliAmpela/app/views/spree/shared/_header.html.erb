@@ -10,23 +10,22 @@
 
   <div class="ui center aligned container">
     <div class="ui stackable grid">
-      <div class="four wide column">
+      <div class="two wide column">
         <!--<%= image_tag 'logo_nature.jpg', :class => 'ui centered small image' %>-->
       </div>
-      <div class="eight wide column middle aligned">
-        <div class="ui massive secondary menu">
+      <div class="ten wide column middle aligned">
+        <div class="ui massive secondary menu liliMenu">
           <a class="item" href="<%= spree.root_path %>">Accueil</a>
           <a class="item" href="<%= spree.home_story_path %>">Le Concept</a>
           <a class="item" href="<%= spree.products_path %>">Catalogue</a>
           <a class="item" href="<%= spree.home_team_path %>">Team</a>
-          <a class="item" href="<%= spree.home_contact_path %>">Contact</a>
+          <!--<a class="item" href="<%= spree.home_contact_path %>">Contact</a>-->
         </div>
       </div>
       <div class="two wide column middle aligned">
         <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
-
       </div>
-      <div class="two wide column middle aligned">
+      <div class="two wide column middle aligned forcedBlack">
         <%= render :partial => 'spree/shared/login_bar' %>
       </div>
     </div>
