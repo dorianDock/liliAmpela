@@ -1,6 +1,6 @@
 <%= render partial: 'spree/shared/error_messages', locals: { target: @spree_user } %>
 <div id="change-password">
-  <h6><%= Spree.t(:change_my_password) %></h6>
+  <h3 class="specificFont"><%= Spree.t(:change_my_password) %></h3>
 
   <%= form_for @spree_user, as: :spree_user, url: spree.update_password_path, method: :put do |f| %>
     <p>

@@ -3,7 +3,7 @@
   <%= render :partial => 'spree/shared/error_messages', :locals => { :target => @order } %>
 
   <div class="row" data-hook="checkout_header">
-    <h1 class="columns three alpha" data-hook="checkout_title"><%= Spree.t(:checkout) %></h1>
+    <h1 class="columns three alpha specificFont" data-hook="checkout_title"><%= Spree.t(:checkout) %></h1>
     <div class="custom_checkout_progress" data-hook="checkout_progress">
       <%= custom_checkout_progress %>
     </div>

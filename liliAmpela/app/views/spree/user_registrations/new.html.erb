@@ -3,7 +3,7 @@
 <%= render 'spree/shared/error_messages', target: resource %>
 
 <div id="new-customer">
-  <h6><%= Spree.t(:new_customer) %></h6>
+  <h3 class="specificFont"><%= Spree.t(:new_customer) %></h3>
 
   <div data-hook="signup">
     <%= form_for resource, as: :spree_user, url: spree.registration_path(resource), html: { class: "ui form" } do |f| %>
