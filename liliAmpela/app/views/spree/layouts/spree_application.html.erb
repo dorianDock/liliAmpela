@@ -49,16 +49,16 @@
           <%= flash_messages %>
           <div class="ui grid">
             <%- unless is_welcome %>
-              <div class="two wide column"></div>
-              <div class="three wide column">
+              <div class="one wide column"></div>
+              <div class="two wide column">
                 <%= custom_taxon_breadcrumbs(@taxon) %>
                 <%- #custom_product_breadcrumbs %>
                 <%= render :partial => 'spree/shared/sidebar' if content_for? :sidebar %>
               </div>
-              <div class="six wide column">
+              <div class="ten wide column">
                 <%= yield %>
               </div>
-              <div class="four wide column"></div>
+              <div class="three wide column"></div>
             <%- end %>
             <%- if is_welcome %>
                 <div class="sixteen wide column">

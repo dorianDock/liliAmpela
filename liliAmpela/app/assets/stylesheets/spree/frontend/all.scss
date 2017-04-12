@@ -22,11 +22,15 @@ $dark_grey: #303030;
 
 .liliMenu{
   font-family: 'lilifont' !important;
-  font-size: 1.6em !important;
+  font-size: 1.7em !important;
 }
 
 .specificFont{
   font-family: 'lilifont' !important;
+}
+
+.bigFont{
+  font-size: 1.2em;
 }
 
 .inlineblock{
@@ -182,5 +186,5 @@ body {
 }
 
 .forcedBlack{
-  color: black;
+  color: black !important;
 }

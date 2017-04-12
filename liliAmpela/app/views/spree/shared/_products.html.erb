@@ -23,7 +23,7 @@
 
 <% if products.any? %>
     <div id="products" class="inline product-listing" data-hook>
-      <div class="ui fluid three cards">
+      <div class="ui fluid five cards">
       <% products.each do |product| %>
           <% url = spree.product_path(product, taxon_id: @taxon.try(:id)) %>
 
