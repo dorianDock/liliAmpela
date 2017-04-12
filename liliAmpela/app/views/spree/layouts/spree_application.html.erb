@@ -13,7 +13,8 @@
       <% is_welcome = ['home'].include?(controller_name) && ['index'].include?(action_name) %>
       <div id="wrapper" class="row" data-hook>
         <div id="content" class="columns mainContainer <%= !content_for?(:sidebar) ? "sixteen" : "twelve omega" %>" data-hook>
-          <div class="ui grid">
+          <%- if flash[:success] || flash[:notice] || flash[:alert] || flash[:error] || flash[:info]%>
+          <div class="ui grid lala">
             <div class="five wide column"></div>
             <div class="six wide column">
               <%- if flash[:success] %>
@@ -44,6 +45,7 @@
             </div>
             <div class="four wide column"></div>
           </div>
+          <%- end %>
           <%= flash_messages %>
           <div class="ui grid">
             <%- unless is_welcome %>

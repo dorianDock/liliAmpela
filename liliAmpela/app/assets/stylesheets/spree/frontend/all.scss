@@ -23,15 +23,15 @@ body {
 }
 
 .mainContainer{
-  margin-top: 5% !important;
+  margin-top: 1% !important;
   padding-bottom: 1% !important;
-  min-height: 500px;
+  min-height: 600px;
   background-color: $milk_white;
 }
 
 #footer {
   background-color: $transparent_milk_white;
-  padding-top: 5%;
+  padding-top: 1%;
 }
 
 .pagination{
@@ -148,4 +148,9 @@ body {
 
 #credit-card-image{
   margin-bottom: 20px;
+}
+
+.stickyDivider{
+  margin-top: 0.3rem !important;
+  margin-bottom: 0.3rem !important;
 }

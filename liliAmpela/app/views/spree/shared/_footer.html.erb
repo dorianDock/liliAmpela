@@ -8,25 +8,8 @@
 <footer id="footer" class="ui vertical footer segment">
   <div class="ui center aligned container">
     <div class="ui stackable divided grid">
-      <div class="four wide column">
-        <h4 class="ui header">La marque</h4>
-        <div class="ui link list">
-          <a href="<%= spree.home_story_path %>" class="item">Le concept</a>
-          <a href="<%= spree.products_path %>" class="item">Nos produits</a>
-          <a href="<%= spree.home_team_path %>" class="item">Notre Equipe</a>
-        </div>
-      </div>
-      <div class="three wide column">
-        <h4 class="ui header">About</h4>
-        <div class="ui link list">
-          <a href="<%= spree.home_contact_path %>" class="item">Contactez nous !</a>
-          <a href="https://www.linkedin.com/in/dorian-gaillot-5892956b/" class="item">Webdesign</a>
-        </div>
-      </div>
-      <div class="nine wide column">
-        <h4 class="ui header">Réseaux Sociaux</h4>
-        <p>Retrouvez Lili Ampela sur les réseaux sociaux et l'actualité de la marque !</p>
-        <div class="ui buttons">
+      <div class="sixteen wide column">
+
         <a href="https://www.facebook.com/liliampelamadagascar/" class="ui facebook button icon">
           <i class="facebook icon"></i>
         </a>
@@ -36,15 +19,19 @@
         <a href="http://www.imgrum.org/user/liliampela/2084319006" class="ui instagram button icon">
           <i class="instagram icon"></i>
         </a>
-        </div>
+        <a class="ui instagram button icon" href="<%= spree.home_contact_path %>">
+          <i class="mail icon"></i>
+        </a>
+
       </div>
     </div>
-    <div class="ui section divider"></div>
+    <div class="ui section divider stickyDivider"></div>
   <!--  <%= image_tag 'lili_logo.jpg', :class => 'ui centered mini image' %> -->
     <div class="ui horizontal small divided link list">
       <a class="item" href="<%= spree.home_contact_path %>">Contactez Nous</a>
       <a class="item" href="#">Termes and Conditions</a>
       <a class="item" href="#">Protection des Données</a>
+      <a href="https://www.linkedin.com/in/dorian-gaillot-5892956b/" class="item">Webdesign</a>
     </div>
   </div>
 </footer>

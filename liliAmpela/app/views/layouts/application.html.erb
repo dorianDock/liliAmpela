@@ -18,41 +18,44 @@
 
 
     <div id="content" class="columns mainContainer <%= !content_for?(:sidebar) ? "sixteen" : "twelve omega" %>" data-hook>
-      <div class="ui grid">
-        <div class="five wide column"></div>
-        <div class="six wide column">
-          <%- if flash[:success] %>
-              <div class="ui attached positive message notice">
-                <p class="header notice"><%= flash[:success] %></p>
-              </div>
-          <%- end %>
-          <%- if flash[:notice] %>
-              <div class="ui attached positive message notice">
-                <p class="header notice"><%= notice %></p>
-              </div>
-          <%- end %>
+      <%- if flash[:success]!='' || flash[:notice]!='' || flash[:alert]!='' || flash[:error]!='' || flash[:info]!=''%>
+          <div class="ui grid trout">
+            <div class="five wide column"></div>
+            <div class="six wide column">
+              <%- if flash[:success] %>
+                  <div class="ui attached positive message notice">
+                    <p class="header notice"><%= flash[:success] %></p>
+                  </div>
+              <%- end %>
+              <%- if flash[:notice] %>
+                  <div class="ui attached positive message notice">
+                    <p class="header notice"><%= notice %></p>
+                  </div>
+              <%- end %>
 
-          <%- if flash[:alert] %>
-              <div class="ui attached negative message notice">
-                <p class="header alert"><%= alert %></p>
-              </div>
-          <%- end %>
+              <%- if flash[:alert] %>
+                  <div class="ui attached negative message notice">
+                    <p class="header alert"><%= alert %></p>
+                  </div>
+              <%- end %>
 
-          <%- if flash[:error] %>
-              <div class="ui attached negative message notice">
-                <p class="header alert"><%= flash[:error] %></p>
-              </div>
-          <%- end %>
+              <%- if flash[:error] %>
+                  <div class="ui attached negative message notice">
+                    <p class="header alert"><%= flash[:error] %></p>
+                  </div>
+              <%- end %>
 
-          <%- if flash[:info] %>
-              <div class="ui attached message notice">
-                <p class="header notice"><%= flash[:info] %></p>
-              </div>
-          <%- end %>
+              <%- if flash[:info] %>
+                  <div class="ui attached message notice">
+                    <p class="header notice"><%= flash[:info] %></p>
+                  </div>
+              <%- end %>
 
-        </div>
-        <div class="four wide column"></div>
-      </div>
+            </div>
+            <div class="four wide column"></div>
+          </div>
+      <%- end %>
+
       <%= flash_messages %>
       <div class="ui grid">
         <div class="two wide column"></div>
