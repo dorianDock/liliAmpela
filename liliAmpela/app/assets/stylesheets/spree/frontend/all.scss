@@ -188,3 +188,11 @@ body {
 .forcedBlack{
   color: black !important;
 }
+
+.main_logo_picture{
+  position: absolute !important;
+  z-index: 100;
+  width: 225px;
+  left: 45%;
+  top: -18px;
+}
